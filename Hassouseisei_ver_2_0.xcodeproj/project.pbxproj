@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		70BD23111AA1BB9F004B6C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */; };
-		70BD23131AA1BB9F004B6C43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23121AA1BB9F004B6C43 /* ViewController.swift */; };
 		70BD23161AA1BB9F004B6C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23141AA1BB9F004B6C43 /* Main.storyboard */; };
 		70BD23181AA1BB9F004B6C43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23171AA1BB9F004B6C43 /* Images.xcassets */; };
 		70BD231B1AA1BB9F004B6C43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23191AA1BB9F004B6C43 /* LaunchScreen.xib */; };
@@ -26,6 +25,10 @@
 		70BD23461AA1CA3A004B6C43 /* WorldHistoryWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD233F1AA1CA3A004B6C43 /* WorldHistoryWord.swift */; };
 		70BD23481AA1CAAB004B6C43 /* WordPoolManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */; };
 		70BD234A1AA1D5B9004B6C43 /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23491AA1D5B9004B6C43 /* WordStore.swift */; };
+		70BD234F1AA26C75004B6C43 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD234B1AA26C75004B6C43 /* 09-chat-2.png */; };
+		70BD23501AA26C75004B6C43 /* 09-chat-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD234C1AA26C75004B6C43 /* 09-chat-2@2x.png */; };
+		70BD23511AA26C75004B6C43 /* 15-tags.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD234D1AA26C75004B6C43 /* 15-tags.png */; };
+		70BD23521AA26C75004B6C43 /* 15-tags@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD234E1AA26C75004B6C43 /* 15-tags@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +45,6 @@
 		70BD230B1AA1BB9F004B6C43 /* Hassouseisei_ver_2_0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hassouseisei_ver_2_0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BD230F1AA1BB9F004B6C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70BD23121AA1BB9F004B6C43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70BD23151AA1BB9F004B6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70BD23171AA1BB9F004B6C43 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70BD231A1AA1BB9F004B6C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -62,6 +64,10 @@
 		70BD233F1AA1CA3A004B6C43 /* WorldHistoryWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldHistoryWord.swift; sourceTree = "<group>"; };
 		70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPoolManagement.swift; sourceTree = "<group>"; };
 		70BD23491AA1D5B9004B6C43 /* WordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordStore.swift; sourceTree = "<group>"; };
+		70BD234B1AA26C75004B6C43 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
+		70BD234C1AA26C75004B6C43 /* 09-chat-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2@2x.png"; sourceTree = "<group>"; };
+		70BD234D1AA26C75004B6C43 /* 15-tags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-tags.png"; sourceTree = "<group>"; };
+		70BD234E1AA26C75004B6C43 /* 15-tags@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-tags@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +111,14 @@
 			children = (
 				70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */,
 				70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */,
-				70BD23121AA1BB9F004B6C43 /* ViewController.swift */,
 				70BD23141AA1BB9F004B6C43 /* Main.storyboard */,
 				70BD23171AA1BB9F004B6C43 /* Images.xcassets */,
 				70BD23301AA1C9E7004B6C43 /* JapaneseWord */,
 				70BD23191AA1BB9F004B6C43 /* LaunchScreen.xib */,
+				70BD234B1AA26C75004B6C43 /* 09-chat-2.png */,
+				70BD234C1AA26C75004B6C43 /* 09-chat-2@2x.png */,
+				70BD234D1AA26C75004B6C43 /* 15-tags.png */,
+				70BD234E1AA26C75004B6C43 /* 15-tags@2x.png */,
 				70BD230E1AA1BB9F004B6C43 /* Supporting Files */,
 			);
 			path = Hassouseisei_ver_2_0;
@@ -239,7 +248,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70BD23511AA26C75004B6C43 /* 15-tags.png in Resources */,
 				70BD23161AA1BB9F004B6C43 /* Main.storyboard in Resources */,
+				70BD23501AA26C75004B6C43 /* 09-chat-2@2x.png in Resources */,
+				70BD234F1AA26C75004B6C43 /* 09-chat-2.png in Resources */,
+				70BD23521AA26C75004B6C43 /* 15-tags@2x.png in Resources */,
 				70BD231B1AA1BB9F004B6C43 /* LaunchScreen.xib in Resources */,
 				70BD23181AA1BB9F004B6C43 /* Images.xcassets in Resources */,
 			);
@@ -267,7 +280,6 @@
 				70BD23461AA1CA3A004B6C43 /* WorldHistoryWord.swift in Sources */,
 				70BD23421AA1CA3A004B6C43 /* ElementaryWordStore.swift in Sources */,
 				70BD23441AA1CA3A004B6C43 /* GameWordStore.swift in Sources */,
-				70BD23131AA1BB9F004B6C43 /* ViewController.swift in Sources */,
 				70BD23451AA1CA3A004B6C43 /* PhysicalWordStore.swift in Sources */,
 				70BD23401AA1CA3A004B6C43 /* BiologicalWordStore.swift in Sources */,
 				70BD23381AA1CA24004B6C43 /* OpticalWordStore.swift in Sources */,
