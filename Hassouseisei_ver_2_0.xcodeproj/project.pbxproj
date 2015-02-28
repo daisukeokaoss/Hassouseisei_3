@@ -13,6 +13,17 @@
 		70BD23181AA1BB9F004B6C43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23171AA1BB9F004B6C43 /* Images.xcassets */; };
 		70BD231B1AA1BB9F004B6C43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23191AA1BB9F004B6C43 /* LaunchScreen.xib */; };
 		70BD23271AA1BB9F004B6C43 /* Hassouseisei_ver_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23261AA1BB9F004B6C43 /* Hassouseisei_ver_2_0Tests.swift */; };
+		70BD23321AA1C9FE004B6C43 /* MedicalWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23311AA1C9FE004B6C43 /* MedicalWordStore.swift */; };
+		70BD23341AA1CA0A004B6C43 /* ModernSocialWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23331AA1CA0A004B6C43 /* ModernSocialWord.swift */; };
+		70BD23361AA1CA14004B6C43 /* ITWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23351AA1CA14004B6C43 /* ITWordStore.swift */; };
+		70BD23381AA1CA24004B6C43 /* OpticalWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23371AA1CA24004B6C43 /* OpticalWordStore.swift */; };
+		70BD23401AA1CA3A004B6C43 /* BiologicalWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23391AA1CA3A004B6C43 /* BiologicalWordStore.swift */; };
+		70BD23411AA1CA3A004B6C43 /* ChemicalWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD233A1AA1CA3A004B6C43 /* ChemicalWordStore.swift */; };
+		70BD23421AA1CA3A004B6C43 /* ElementaryWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD233B1AA1CA3A004B6C43 /* ElementaryWordStore.swift */; };
+		70BD23431AA1CA3A004B6C43 /* EthicalWordStoreJp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD233C1AA1CA3A004B6C43 /* EthicalWordStoreJp.swift */; };
+		70BD23441AA1CA3A004B6C43 /* GameWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD233D1AA1CA3A004B6C43 /* GameWordStore.swift */; };
+		70BD23451AA1CA3A004B6C43 /* PhysicalWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD233E1AA1CA3A004B6C43 /* PhysicalWordStore.swift */; };
+		70BD23461AA1CA3A004B6C43 /* WorldHistoryWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD233F1AA1CA3A004B6C43 /* WorldHistoryWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,17 @@
 		70BD23201AA1BB9F004B6C43 /* Hassouseisei_ver_2_0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hassouseisei_ver_2_0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BD23251AA1BB9F004B6C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70BD23261AA1BB9F004B6C43 /* Hassouseisei_ver_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hassouseisei_ver_2_0Tests.swift; sourceTree = "<group>"; };
+		70BD23311AA1C9FE004B6C43 /* MedicalWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicalWordStore.swift; sourceTree = "<group>"; };
+		70BD23331AA1CA0A004B6C43 /* ModernSocialWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernSocialWord.swift; sourceTree = "<group>"; };
+		70BD23351AA1CA14004B6C43 /* ITWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITWordStore.swift; sourceTree = "<group>"; };
+		70BD23371AA1CA24004B6C43 /* OpticalWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpticalWordStore.swift; sourceTree = "<group>"; };
+		70BD23391AA1CA3A004B6C43 /* BiologicalWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiologicalWordStore.swift; sourceTree = "<group>"; };
+		70BD233A1AA1CA3A004B6C43 /* ChemicalWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalWordStore.swift; sourceTree = "<group>"; };
+		70BD233B1AA1CA3A004B6C43 /* ElementaryWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementaryWordStore.swift; sourceTree = "<group>"; };
+		70BD233C1AA1CA3A004B6C43 /* EthicalWordStoreJp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EthicalWordStoreJp.swift; sourceTree = "<group>"; };
+		70BD233D1AA1CA3A004B6C43 /* GameWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWordStore.swift; sourceTree = "<group>"; };
+		70BD233E1AA1CA3A004B6C43 /* PhysicalWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalWordStore.swift; sourceTree = "<group>"; };
+		70BD233F1AA1CA3A004B6C43 /* WorldHistoryWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldHistoryWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +103,7 @@
 				70BD23121AA1BB9F004B6C43 /* ViewController.swift */,
 				70BD23141AA1BB9F004B6C43 /* Main.storyboard */,
 				70BD23171AA1BB9F004B6C43 /* Images.xcassets */,
+				70BD23301AA1C9E7004B6C43 /* JapaneseWord */,
 				70BD23191AA1BB9F004B6C43 /* LaunchScreen.xib */,
 				70BD230E1AA1BB9F004B6C43 /* Supporting Files */,
 			);
@@ -110,6 +133,24 @@
 				70BD23251AA1BB9F004B6C43 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70BD23301AA1C9E7004B6C43 /* JapaneseWord */ = {
+			isa = PBXGroup;
+			children = (
+				70BD23351AA1CA14004B6C43 /* ITWordStore.swift */,
+				70BD23311AA1C9FE004B6C43 /* MedicalWordStore.swift */,
+				70BD23371AA1CA24004B6C43 /* OpticalWordStore.swift */,
+				70BD23331AA1CA0A004B6C43 /* ModernSocialWord.swift */,
+				70BD23391AA1CA3A004B6C43 /* BiologicalWordStore.swift */,
+				70BD233A1AA1CA3A004B6C43 /* ChemicalWordStore.swift */,
+				70BD233B1AA1CA3A004B6C43 /* ElementaryWordStore.swift */,
+				70BD233C1AA1CA3A004B6C43 /* EthicalWordStoreJp.swift */,
+				70BD233D1AA1CA3A004B6C43 /* GameWordStore.swift */,
+				70BD233E1AA1CA3A004B6C43 /* PhysicalWordStore.swift */,
+				70BD233F1AA1CA3A004B6C43 /* WorldHistoryWord.swift */,
+			);
+			name = JapaneseWord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +253,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70BD23361AA1CA14004B6C43 /* ITWordStore.swift in Sources */,
+				70BD23411AA1CA3A004B6C43 /* ChemicalWordStore.swift in Sources */,
+				70BD23431AA1CA3A004B6C43 /* EthicalWordStoreJp.swift in Sources */,
+				70BD23321AA1C9FE004B6C43 /* MedicalWordStore.swift in Sources */,
+				70BD23341AA1CA0A004B6C43 /* ModernSocialWord.swift in Sources */,
+				70BD23461AA1CA3A004B6C43 /* WorldHistoryWord.swift in Sources */,
+				70BD23421AA1CA3A004B6C43 /* ElementaryWordStore.swift in Sources */,
+				70BD23441AA1CA3A004B6C43 /* GameWordStore.swift in Sources */,
 				70BD23131AA1BB9F004B6C43 /* ViewController.swift in Sources */,
+				70BD23451AA1CA3A004B6C43 /* PhysicalWordStore.swift in Sources */,
+				70BD23401AA1CA3A004B6C43 /* BiologicalWordStore.swift in Sources */,
+				70BD23381AA1CA24004B6C43 /* OpticalWordStore.swift in Sources */,
 				70BD23111AA1BB9F004B6C43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +459,7 @@
 				70BD232C1AA1BB9F004B6C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70BD232D1AA1BB9F004B6C43 /* Build configuration list for PBXNativeTarget "Hassouseisei_ver_2_0Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +468,7 @@
 				70BD232F1AA1BB9F004B6C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

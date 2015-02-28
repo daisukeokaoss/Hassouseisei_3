@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D8EDB421-904C-4822-9398-218BC9DF3A24</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hassouseisei_ver_2_0</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>008E58A48C8A26171851993446C6A19CD526419E</key>
+		<string>https://github.com/Daisukedayon/Hassouseisei_ver_3_0.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Hassouseisei_ver_2_0.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>008E58A48C8A26171851993446C6A19CD526419E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Daisukedayon/Hassouseisei_ver_3_0.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>008E58A48C8A26171851993446C6A19CD526419E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>008E58A48C8A26171851993446C6A19CD526419E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Hassouseisei_ver_3_0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
