@@ -9,7 +9,7 @@
 import Foundation
 
 
-class GameWordStore{
+class GameWordStore: WordStore{
     class func returnCaption() -> String{
         return "世界史用語"
     }

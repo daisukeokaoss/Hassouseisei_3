@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ModernSocialWord{
+class ModernSocialWord: WordStore{
     class func returnCaption() -> String{
         return "現代社会用語"
     }

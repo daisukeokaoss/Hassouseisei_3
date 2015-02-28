@@ -8,7 +8,7 @@
 
 import Foundation
 
-class OpticalWordStore{
+class OpticalWordStore: WordStore{
     class func returnCaption() -> String{
         return "光学用語"
     }

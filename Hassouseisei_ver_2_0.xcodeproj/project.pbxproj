@@ -24,6 +24,8 @@
 		70BD23441AA1CA3A004B6C43 /* GameWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD233D1AA1CA3A004B6C43 /* GameWordStore.swift */; };
 		70BD23451AA1CA3A004B6C43 /* PhysicalWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD233E1AA1CA3A004B6C43 /* PhysicalWordStore.swift */; };
 		70BD23461AA1CA3A004B6C43 /* WorldHistoryWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD233F1AA1CA3A004B6C43 /* WorldHistoryWord.swift */; };
+		70BD23481AA1CAAB004B6C43 /* WordPoolManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */; };
+		70BD234A1AA1D5B9004B6C43 /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23491AA1D5B9004B6C43 /* WordStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		70BD233D1AA1CA3A004B6C43 /* GameWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWordStore.swift; sourceTree = "<group>"; };
 		70BD233E1AA1CA3A004B6C43 /* PhysicalWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalWordStore.swift; sourceTree = "<group>"; };
 		70BD233F1AA1CA3A004B6C43 /* WorldHistoryWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldHistoryWord.swift; sourceTree = "<group>"; };
+		70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPoolManagement.swift; sourceTree = "<group>"; };
+		70BD23491AA1D5B9004B6C43 /* WordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */,
+				70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */,
 				70BD23121AA1BB9F004B6C43 /* ViewController.swift */,
 				70BD23141AA1BB9F004B6C43 /* Main.storyboard */,
 				70BD23171AA1BB9F004B6C43 /* Images.xcassets */,
@@ -149,6 +154,7 @@
 				70BD233D1AA1CA3A004B6C43 /* GameWordStore.swift */,
 				70BD233E1AA1CA3A004B6C43 /* PhysicalWordStore.swift */,
 				70BD233F1AA1CA3A004B6C43 /* WorldHistoryWord.swift */,
+				70BD23491AA1D5B9004B6C43 /* WordStore.swift */,
 			);
 			name = JapaneseWord;
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 				70BD23451AA1CA3A004B6C43 /* PhysicalWordStore.swift in Sources */,
 				70BD23401AA1CA3A004B6C43 /* BiologicalWordStore.swift in Sources */,
 				70BD23381AA1CA24004B6C43 /* OpticalWordStore.swift in Sources */,
+				70BD234A1AA1D5B9004B6C43 /* WordStore.swift in Sources */,
+				70BD23481AA1CAAB004B6C43 /* WordPoolManagement.swift in Sources */,
 				70BD23111AA1BB9F004B6C43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

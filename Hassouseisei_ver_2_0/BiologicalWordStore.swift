@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BiologicalWordStore{
+class BiologicalWordStore: WordStore{
     class func returnCaption() -> String{
         return "生物用語"
     }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ITWordStoreStore{
+class ITWordStoreStore: WordStore{
     class func returnCaption() -> String{
         return "IT用語"
     }

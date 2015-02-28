@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MedicalWordStore{
+class MedicalWordStore: WordStore{
     class func returnCaption() -> String{
         return "医学用語"
     }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PhysicalWordStore{
+class PhysicalWordStore:WordStore{
 
     class func returnCaption() -> String{
         return "物理学用語"
