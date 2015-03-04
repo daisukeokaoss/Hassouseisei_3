@@ -545,11 +545,8 @@ class ElementaryWordStore:WordStore{
             "介入","一貫性","取り沙汰される","教鞭を執る","はやる","文豪","リニアモーターカー",
             "天下り","価格破壊","環境アセスメント","サミット","ホームヘルパー","マルチメディア",
             "ドナー","NPO","NGO","EU","中東和平会議"];
-        ReturningWordArray += wordArray
-        
-        return ReturningWordArray
-        
-        
+        ReturnWordArray += wordArray
+        return ReturnWordArray
 
     }
 }
