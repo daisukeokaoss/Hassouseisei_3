@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		70B9029C1AA6D8AD002D14D9 /* WordPlotScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */; };
+		70B9029E1AA6E775002D14D9 /* DOFlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9029D1AA6E775002D14D9 /* DOFlatButton.swift */; };
 		70BD23111AA1BB9F004B6C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */; };
 		70BD23161AA1BB9F004B6C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23141AA1BB9F004B6C43 /* Main.storyboard */; };
 		70BD23181AA1BB9F004B6C43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23171AA1BB9F004B6C43 /* Images.xcassets */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordPlotScrollView.swift; path = ../WordPlotScrollView.swift; sourceTree = "<group>"; };
+		70B9029D1AA6E775002D14D9 /* DOFlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFlatButton.swift; sourceTree = "<group>"; };
 		70BD230B1AA1BB9F004B6C43 /* Hassouseisei_ver_2_0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hassouseisei_ver_2_0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BD230F1AA1BB9F004B6C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */,
 				70BD23141AA1BB9F004B6C43 /* Main.storyboard */,
 				70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */,
+				70B9029D1AA6E775002D14D9 /* DOFlatButton.swift */,
 				70BD23171AA1BB9F004B6C43 /* Images.xcassets */,
 				70BD23301AA1C9E7004B6C43 /* JapaneseWord */,
 				70BD23191AA1BB9F004B6C43 /* LaunchScreen.xib */,
@@ -278,6 +281,7 @@
 				70BD23361AA1CA14004B6C43 /* ITWordStore.swift in Sources */,
 				70BD23411AA1CA3A004B6C43 /* ChemicalWordStore.swift in Sources */,
 				70BD23431AA1CA3A004B6C43 /* EthicalWordStoreJp.swift in Sources */,
+				70B9029E1AA6E775002D14D9 /* DOFlatButton.swift in Sources */,
 				70BD23321AA1C9FE004B6C43 /* MedicalWordStore.swift in Sources */,
 				70BD23341AA1CA0A004B6C43 /* ModernSocialWord.swift in Sources */,
 				70BD23461AA1CA3A004B6C43 /* WorldHistoryWord.swift in Sources */,
