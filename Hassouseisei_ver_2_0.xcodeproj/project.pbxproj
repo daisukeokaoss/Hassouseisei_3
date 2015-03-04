@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70B9029C1AA6D8AD002D14D9 /* WordPlotScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */; };
 		70BD23111AA1BB9F004B6C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */; };
 		70BD23161AA1BB9F004B6C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23141AA1BB9F004B6C43 /* Main.storyboard */; };
 		70BD23181AA1BB9F004B6C43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23171AA1BB9F004B6C43 /* Images.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordPlotScrollView.swift; path = ../WordPlotScrollView.swift; sourceTree = "<group>"; };
 		70BD230B1AA1BB9F004B6C43 /* Hassouseisei_ver_2_0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hassouseisei_ver_2_0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BD230F1AA1BB9F004B6C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */,
 				70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */,
 				70BD23141AA1BB9F004B6C43 /* Main.storyboard */,
+				70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */,
 				70BD23171AA1BB9F004B6C43 /* Images.xcassets */,
 				70BD23301AA1C9E7004B6C43 /* JapaneseWord */,
 				70BD23191AA1BB9F004B6C43 /* LaunchScreen.xib */,
@@ -282,6 +285,7 @@
 				70BD23441AA1CA3A004B6C43 /* GameWordStore.swift in Sources */,
 				70BD23451AA1CA3A004B6C43 /* PhysicalWordStore.swift in Sources */,
 				70BD23401AA1CA3A004B6C43 /* BiologicalWordStore.swift in Sources */,
+				70B9029C1AA6D8AD002D14D9 /* WordPlotScrollView.swift in Sources */,
 				70BD23381AA1CA24004B6C43 /* OpticalWordStore.swift in Sources */,
 				70BD234A1AA1D5B9004B6C43 /* WordStore.swift in Sources */,
 				70BD23481AA1CAAB004B6C43 /* WordPoolManagement.swift in Sources */,
