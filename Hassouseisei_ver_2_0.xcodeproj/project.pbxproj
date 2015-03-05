@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703EDE4F1AA714C000DEF568 /* QBFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 703EDE4E1AA714C000DEF568 /* QBFlatButton.m */; };
 		70B9029C1AA6D8AD002D14D9 /* WordPlotScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */; };
-		70B9029E1AA6E775002D14D9 /* DOFlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9029D1AA6E775002D14D9 /* DOFlatButton.swift */; };
 		70BD23111AA1BB9F004B6C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */; };
 		70BD23161AA1BB9F004B6C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23141AA1BB9F004B6C43 /* Main.storyboard */; };
 		70BD23181AA1BB9F004B6C43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23171AA1BB9F004B6C43 /* Images.xcassets */; };
@@ -44,8 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		703EDE4C1AA714C000DEF568 /* Hassouseisei_ver_2_0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hassouseisei_ver_2_0-Bridging-Header.h"; sourceTree = "<group>"; };
+		703EDE4D1AA714C000DEF568 /* QBFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBFlatButton.h; sourceTree = "<group>"; };
+		703EDE4E1AA714C000DEF568 /* QBFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBFlatButton.m; sourceTree = "<group>"; };
 		70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordPlotScrollView.swift; path = ../WordPlotScrollView.swift; sourceTree = "<group>"; };
-		70B9029D1AA6E775002D14D9 /* DOFlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFlatButton.swift; sourceTree = "<group>"; };
 		70BD230B1AA1BB9F004B6C43 /* Hassouseisei_ver_2_0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hassouseisei_ver_2_0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BD230F1AA1BB9F004B6C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +119,8 @@
 				70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */,
 				70BD23141AA1BB9F004B6C43 /* Main.storyboard */,
 				70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */,
-				70B9029D1AA6E775002D14D9 /* DOFlatButton.swift */,
+				703EDE4D1AA714C000DEF568 /* QBFlatButton.h */,
+				703EDE4E1AA714C000DEF568 /* QBFlatButton.m */,
 				70BD23171AA1BB9F004B6C43 /* Images.xcassets */,
 				70BD23301AA1C9E7004B6C43 /* JapaneseWord */,
 				70BD23191AA1BB9F004B6C43 /* LaunchScreen.xib */,
@@ -126,6 +129,7 @@
 				70BD234D1AA26C75004B6C43 /* 15-tags.png */,
 				70BD234E1AA26C75004B6C43 /* 15-tags@2x.png */,
 				70BD230E1AA1BB9F004B6C43 /* Supporting Files */,
+				703EDE4C1AA714C000DEF568 /* Hassouseisei_ver_2_0-Bridging-Header.h */,
 			);
 			path = Hassouseisei_ver_2_0;
 			sourceTree = "<group>";
@@ -281,7 +285,6 @@
 				70BD23361AA1CA14004B6C43 /* ITWordStore.swift in Sources */,
 				70BD23411AA1CA3A004B6C43 /* ChemicalWordStore.swift in Sources */,
 				70BD23431AA1CA3A004B6C43 /* EthicalWordStoreJp.swift in Sources */,
-				70B9029E1AA6E775002D14D9 /* DOFlatButton.swift in Sources */,
 				70BD23321AA1C9FE004B6C43 /* MedicalWordStore.swift in Sources */,
 				70BD23341AA1CA0A004B6C43 /* ModernSocialWord.swift in Sources */,
 				70BD23461AA1CA3A004B6C43 /* WorldHistoryWord.swift in Sources */,
@@ -294,6 +297,7 @@
 				70BD234A1AA1D5B9004B6C43 /* WordStore.swift in Sources */,
 				70BD23481AA1CAAB004B6C43 /* WordPoolManagement.swift in Sources */,
 				70BD23111AA1BB9F004B6C43 /* AppDelegate.swift in Sources */,
+				703EDE4F1AA714C000DEF568 /* QBFlatButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,9 +422,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hassouseisei_ver_2_0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hassouseisei_ver_2_0/Hassouseisei_ver_2_0-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -428,9 +435,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hassouseisei_ver_2_0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hassouseisei_ver_2_0/Hassouseisei_ver_2_0-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class WordPlotScrollView: UIScrollView {
     var Label1st :UILabel!
     var Label2nd:UILabel!
@@ -17,7 +19,7 @@ class WordPlotScrollView: UIScrollView {
     var Label6th:UILabel!
     var Label7th:UILabel!
     
-    var generateButton:DOFlatButton = DOFlatButton.buttonWithType(UIButtonType.Custom) as DOFlatButton
+    var generateButton:DOFlatButton
     
 
 
@@ -76,11 +78,13 @@ class WordPlotScrollView: UIScrollView {
         self.generateButton.margin = 4.0
         self.generateButton.depth  = 3.0
         
-        //self.generateButton.titleLabel?.font = UIFont.boldSystemFontOfSize(16)
-        //self.generateButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        self.generateButton.titleLabel?.font = UIFont.boldSystemFontOfSize(16)
+        self.generateButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         self.generateButton.setTitle("Push", forState: UIControlState.Normal)
         
         self.addSubview(self.generateButton)
+        
+        
         
         
     }
