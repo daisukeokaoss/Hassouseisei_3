@@ -416,6 +416,9 @@ class GameWordStore: WordStore{
                "PL","plz","pop","pot","PT","PBW","PS","PvE","PvP","q","RMT","ROM","RPG","RTS","RvR","s","SLG","SS","STFU","sup","Steam","T","TPS","TL","TYVM","UG","updete",
                "VC","w"]
         
+        ReturnWordArray += wordArray
+        
+        
         
         return ReturnWordArray
 
