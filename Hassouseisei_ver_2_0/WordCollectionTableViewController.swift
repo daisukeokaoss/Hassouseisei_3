@@ -36,7 +36,7 @@ class WordCollectionTableViewController: UITableViewController {
         if(section == 0){
             var delegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
             
-            return (delegate.wordpoolmanage?.WordPoolArray.count ?? 0)+1
+            return (delegate.wordpoolmanage.WordPoolArray.count ?? 0)+1
         }
         
         return 0
@@ -48,27 +48,30 @@ class WordCollectionTableViewController: UITableViewController {
         
         
         
-        if(indexPath.section == 0 || ((indexPath.row >= 0) && (indexPath.row < (delegate.wordpoolmanage?.WordPoolArray.count ?? 0)))){
+        if(indexPath.section == 0 && ((indexPath.row >= 0) && (indexPath.row < (delegate.wordpoolmanage.WordPoolArray.count ?? 0)))){
+            
             var cell:SomeWordUITableCell = tableView.dequeueReusableCellWithIdentifier("SomeWordCollection", forIndexPath: indexPath) as SomeWordUITableCell
             
             
             var wordstore:WordStore?
-            //var PlotCaptionOfCell:String = delegate.wordpoolmanage?.WordPoolArray[indexPath.row].returnCaption()
-            if(delegate.wordpoolmanage?.WordPoolArray[indexPath.row] != nil){
-                wordstore = delegate.wordpoolmanage?.WordPoolArray[indexPath.row] as WordStore?
-            }
+            wordstore = delegate.wordpoolmanage.WordPoolArray[indexPath.row] as WordStore
             
-            cell.SetCaption(WordStore.returnCaption())
+            print(indexPath.row)
+            
+            cell.SetCaption(wordstore!.returnCaption())
             
             return cell
+
             
         }else{
             let cell:WordCountTableViewCell = tableView.dequeueReusableCellWithIdentifier("WordCountCell", forIndexPath: indexPath) as WordCountTableViewCell
-            
+        
             return cell
         }
         
         
+
+
         
         
     

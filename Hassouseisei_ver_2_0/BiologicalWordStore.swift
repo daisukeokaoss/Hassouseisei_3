@@ -9,11 +9,11 @@
 import Foundation
 
 class BiologicalWordStore: WordStore{
-    class func returnCaption() -> String{
+    func returnCaption() -> String{
         return "生物用語"
     }
     
-    class func ReturningWordArray() -> Array<String>{
+    func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         var wordArray = ["rRNA","Rh因子","Rh式血液型","RNアーゼ","RNA","RNAウイルス","RNA干渉","RNAスプライシング",
             "RNA分解酵素","RNAポリメラーゼ","RNAワールド","Rf値","R型株","RQ","アイ","アイアイ","IAA",

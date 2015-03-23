@@ -9,11 +9,11 @@
 import Foundation
 
 class EthicalStoreStore: WordStore{
-    class func returnCaption() -> String{
+    func returnCaption() -> String{
         return "倫理用語"
     }
     
-    class func ReturningWordArray() -> Array<String>{
+    func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         
         var wordPool = ["青年期","プレ青年期","ペスタロッチ","アリエス","〈子供〉の誕生","青年期の延長","プレ青年期",

@@ -10,11 +10,11 @@ import Foundation
 
 
 class GameWordStore: WordStore{
-    class func returnCaption() -> String{
+    func returnCaption() -> String{
         return "世界史用語"
     }
     
-    class func ReturningWordArray() -> Array<String>{
+    func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         
         var wordArray = ["ああああ","ああ、いなごだ… ","アーガス","アーケーダー","アーケード","アーケードゲーム","合言葉はBee！","相手ターン","アイテムコンプ","愛と哀しみのバッサリ感","愛のうた",

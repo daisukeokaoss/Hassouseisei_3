@@ -9,11 +9,11 @@
 import Foundation
 
 class ModernSocialWord: WordStore{
-    class func returnCaption() -> String{
+    func returnCaption() -> String{
         return "現代社会用語"
     }
     
-    class func ReturningWordArray() -> Array<String>{
+    func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         
         var wordArray = ["自然環境","環境問題","ISO14000シリーズ","ISO14001","環境マネジメントシステム","環境ラベル",

@@ -9,11 +9,11 @@
 import Foundation
 
 class OpticalWordStore: WordStore{
-    class func returnCaption() -> String{
+    func returnCaption() -> String{
         return "光学用語"
     }
     
-    class func ReturningWordArray() -> Array<String>{
+    func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
 /////////////////////////////////////////////////////////////////////////////////////////
 //以下の書籍を入力した

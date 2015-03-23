@@ -10,8 +10,8 @@ import Foundation
 
 protocol WordStore{
     
-    class func returnCaption() -> String
+    func returnCaption() -> String
     
-    class func ReturningWordArray() -> Array<String>
+    func ReturningWordArray() -> Array<String>
     
 }

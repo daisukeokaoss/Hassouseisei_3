@@ -9,11 +9,11 @@
 import Foundation
 
 class ITWordStoreStore: WordStore{
-    class func returnCaption() -> String{
+     func returnCaption() -> String{
         return "IT用語"
     }
     
-    class func ReturningWordArray() -> Array<String>{
+     func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         
         var wordArray = ["アイアンパイソン","アイコン","アイソクロナス転送","相手先ブランド製造","アイドル","アウトソーシング",

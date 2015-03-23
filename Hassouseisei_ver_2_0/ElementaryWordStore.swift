@@ -9,11 +9,11 @@
 import Foundation
 
 class ElementaryWordStore:WordStore{
-    class func returnCaption() -> String{
+    func returnCaption() -> String{
         return "一般用語"
     }
     
-    class func ReturningWordArray() -> Array<String>{
+    func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         var wordArray = ["心にくい","熱を上げる","見下す","反論","均等","ありきたり","強制的","頭ごなし",
             "横行","手がつけられない","ありのまま","口実","妨げる","仮に","なみなみと",

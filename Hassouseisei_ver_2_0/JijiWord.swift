@@ -9,11 +9,11 @@
 import Foundation
 
 class JijiWordStore: WordStore{
-    class func returnCaption() -> String{
+    func returnCaption() -> String{
         return "時事用語"
     }
     
-    class func ReturningWordArray() -> Array<String>{
+    func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         
         //http://www.weblio.jp/category/business/sngjy
