@@ -5,31 +5,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="UaZ-Fb-PAB">
-            <objects>
-                <viewController id="Qhh-r7-gzO" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4pK-yL-Jh8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Jti-OI-7nI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QLh-w0-9KV">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Pke-dD-jzv">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="15-tags.png" id="xZF-2D-rWx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nmB-64-rTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="749" y="550"/>
-        </scene>
         <!--Item 1-->
         <scene sceneID="M1J-Zg-GQ8">
             <objects>
@@ -61,6 +36,76 @@
             </objects>
             <point key="canvasLocation" x="749" y="-112"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="YJd-S0-eXF">
+            <objects>
+                <tableViewController id="dq5-9f-deF" customClass="WordCollectionTableViewController" customModule="Hassouseisei_ver_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="PTD-Pk-4Qt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SomeWordCollection" id="Fsb-DO-mog" customClass="SomeWordUITableCell" customModule="Hassouseisei_ver_2_0" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="rrr" tableViewCell="Fsb-DO-mog" id="ths-F5-O2m">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="なになに用語" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KD2-f0-hZ3">
+                                            <rect key="frame" x="17" y="11" width="102" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sb3-9o-ij3">
+                                            <rect key="frame" x="543" y="6" width="51" height="31"/>
+                                        </switch>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KD2-f0-hZ3" firstAttribute="top" secondItem="ths-F5-O2m" secondAttribute="topMargin" constant="3" id="2B5-h8-xIy"/>
+                                        <constraint firstItem="sb3-9o-ij3" firstAttribute="trailing" secondItem="ths-F5-O2m" secondAttribute="trailingMargin" id="B40-JZ-3X5"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="sb3-9o-ij3" secondAttribute="bottom" constant="-1.5" id="Hag-JI-Hjg"/>
+                                        <constraint firstItem="KD2-f0-hZ3" firstAttribute="leading" secondItem="ths-F5-O2m" secondAttribute="leadingMargin" constant="9" id="JfW-Ge-IcI"/>
+                                        <constraint firstItem="sb3-9o-ij3" firstAttribute="top" secondItem="ths-F5-O2m" secondAttribute="topMargin" constant="-2" id="UcE-4B-hvs"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="KD2-f0-hZ3" secondAttribute="bottom" constant="3.5" id="mQn-P5-UaQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="EnableOrDisableWordPoolSwitch" destination="sb3-9o-ij3" id="ujy-dd-JeP"/>
+                                    <outlet property="SomeWordLabel" destination="KD2-f0-hZ3" id="eys-yw-59r"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCountCell" id="dWp-d6-r8w" customClass="WordCountTableViewCell" customModule="Hassouseisei_ver_2_0" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dWp-d6-r8w" id="PGN-AA-TEI">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ワード数はなになに個です" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mv-GA-7uZ">
+                                            <rect key="frame" x="17" y="8" width="204" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4Mv-GA-7uZ" firstAttribute="top" secondItem="PGN-AA-TEI" secondAttribute="topMargin" id="3ZJ-c3-zti"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="4Mv-GA-7uZ" secondAttribute="bottom" constant="6.5" id="BoO-GJ-Va1"/>
+                                        <constraint firstItem="4Mv-GA-7uZ" firstAttribute="leading" secondItem="PGN-AA-TEI" secondAttribute="leadingMargin" constant="9" id="FBF-7H-aWe"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dq5-9f-deF" id="7cT-jh-iYm"/>
+                            <outlet property="delegate" destination="dq5-9f-deF" id="wws-9D-uXZ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" image="15-tags.png" id="iE1-1e-Rf0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UeP-Tm-S8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="541"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xT3-KU-HZh">
             <objects>
@@ -73,7 +118,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Qs5-4W-LWN" kind="relationship" relationship="viewControllers" id="b0V-KA-qjr"/>
-                        <segue destination="Qhh-r7-gzO" kind="relationship" relationship="viewControllers" id="CpE-zA-NdH"/>
+                        <segue destination="dq5-9f-deF" kind="relationship" relationship="viewControllers" id="T92-Xi-VX5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BnL-ZG-W2R" userLabel="First Responder" sceneMemberID="firstResponder"/>

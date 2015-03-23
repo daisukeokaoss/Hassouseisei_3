@@ -33,6 +33,9 @@
 		70BD23511AA26C75004B6C43 /* 15-tags.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD234D1AA26C75004B6C43 /* 15-tags.png */; };
 		70BD23521AA26C75004B6C43 /* 15-tags@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD234E1AA26C75004B6C43 /* 15-tags@2x.png */; };
 		70FCA3321ABF053C00509B04 /* DOFlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCA3311ABF053C00509B04 /* DOFlatButton.swift */; };
+		70FCA3381ABFFA2200509B04 /* WordCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCA3371ABFFA2200509B04 /* WordCollectionTableViewController.swift */; };
+		70FCA33A1AC0069500509B04 /* SomeWordUITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCA3391AC0069500509B04 /* SomeWordUITableCell.swift */; };
+		70FCA33C1AC0086100509B04 /* WordCountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCA33B1AC0086100509B04 /* WordCountTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		70BD234D1AA26C75004B6C43 /* 15-tags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-tags.png"; sourceTree = "<group>"; };
 		70BD234E1AA26C75004B6C43 /* 15-tags@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-tags@2x.png"; sourceTree = "<group>"; };
 		70FCA3311ABF053C00509B04 /* DOFlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFlatButton.swift; sourceTree = "<group>"; };
+		70FCA3371ABFFA2200509B04 /* WordCollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCollectionTableViewController.swift; sourceTree = "<group>"; };
+		70FCA3391AC0069500509B04 /* SomeWordUITableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeWordUITableCell.swift; sourceTree = "<group>"; };
+		70FCA33B1AC0086100509B04 /* WordCountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCountTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +127,10 @@
 				70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */,
 				70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */,
 				70BD23141AA1BB9F004B6C43 /* Main.storyboard */,
+				70FCA33B1AC0086100509B04 /* WordCountTableViewCell.swift */,
+				70FCA3391AC0069500509B04 /* SomeWordUITableCell.swift */,
 				70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */,
+				70FCA3371ABFFA2200509B04 /* WordCollectionTableViewController.swift */,
 				70FCA3311ABF053C00509B04 /* DOFlatButton.swift */,
 				70BD23171AA1BB9F004B6C43 /* Images.xcassets */,
 				70BD23301AA1C9E7004B6C43 /* JapaneseWord */,
@@ -286,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70FCA3381ABFFA2200509B04 /* WordCollectionTableViewController.swift in Sources */,
 				70BD23361AA1CA14004B6C43 /* ITWordStore.swift in Sources */,
 				70BD23411AA1CA3A004B6C43 /* ChemicalWordStore.swift in Sources */,
 				70BD23431AA1CA3A004B6C43 /* EthicalWordStoreJp.swift in Sources */,
@@ -295,6 +305,8 @@
 				70BD23461AA1CA3A004B6C43 /* WorldHistoryWord.swift in Sources */,
 				70BD23421AA1CA3A004B6C43 /* ElementaryWordStore.swift in Sources */,
 				70BD23441AA1CA3A004B6C43 /* GameWordStore.swift in Sources */,
+				70FCA33A1AC0069500509B04 /* SomeWordUITableCell.swift in Sources */,
+				70FCA33C1AC0086100509B04 /* WordCountTableViewCell.swift in Sources */,
 				70BD23451AA1CA3A004B6C43 /* PhysicalWordStore.swift in Sources */,
 				70BD23401AA1CA3A004B6C43 /* BiologicalWordStore.swift in Sources */,
 				70B9029C1AA6D8AD002D14D9 /* WordPlotScrollView.swift in Sources */,
