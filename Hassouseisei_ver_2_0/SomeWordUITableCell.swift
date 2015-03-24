@@ -10,6 +10,13 @@ import UIKit
 
 class SomeWordUITableCell: UITableViewCell {
 
+    @IBAction func WordSwitchClicked(sender: UISwitch) {
+        if(sender.on == true){
+            self.SwitchOn = true
+        }else {
+            self.SwitchOn = false
+        }
+    }
     @IBOutlet weak var SomeWordLabel: UILabel!
     @IBOutlet weak var EnableOrDisableWordPoolSwitch: UISwitch!
     override func awakeFromNib() {
@@ -20,6 +27,8 @@ class SomeWordUITableCell: UITableViewCell {
     func SetCaption(cap :String){
         SomeWordLabel.text = cap
     }
+    
+    internal var SwitchOn:Bool = true
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

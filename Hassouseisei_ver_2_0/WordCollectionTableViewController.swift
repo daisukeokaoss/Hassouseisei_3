@@ -10,6 +10,11 @@ import UIKit
 
 class WordCollectionTableViewController: UITableViewController {
 
+    var WordCountLabel:UILabel
+    
+    var someWordTableCell:array<
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -68,18 +73,24 @@ class WordCollectionTableViewController: UITableViewController {
         
             return cell
         }
-        
-        
-
-
-        
-        
+    }
     
-      
-
-        // Configure the cell...
-
+    
+    func countFullWordArrayCount()-> Int
+    {
+        var delegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        var totalArray:Array<String> = []
         
+       /* for var i = 0 ; i < self.SomeWordsCellCollection.count; i++ {
+            var cell = self.SomeWordsCellCollection[i] as SomeWordUITableCell
+            if (cell.SwitchOn == true){
+                totalArray += delegate.wordpoolmanage.WordPoolArray[i].ReturningWordArray()
+            }
+        }
+        
+        self.WordCollectionPlotLabel[0].text = "ワード数は" + totalArray.count.description + "個です"*/
+        
+        return totalArray.count
     }
 
     /*
