@@ -9,11 +9,11 @@
 import Foundation
 
 class JijiWordStore: WordStore{
-    func returnCaption() -> String{
+    override func returnCaption() -> String{
         return "時事用語"
     }
     
-    func ReturningWordArray() -> Array<String>{
+    override func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         
         //http://www.weblio.jp/category/business/sngjy
@@ -766,6 +766,8 @@ class JijiWordStore: WordStore{
         
         ReturnWordArray += wordArray
         
+        //http://www.weblio.jp/category/business/sngjy/te/2
+        
         wordArray = ["ティア・ワン・キャピタル・レシオ","ティタノサウルス","ティモシェンコ","ティモシェンコ首相","ティーウェイ航空","TS倍率","T細胞","Tdex+","TPPおばけ","TPP拡大交渉","TPPから日本の食と暮らし・いのちを守る国民集会",
                     "TPP関連銘柄","TPP交渉への参加表明見送り","TPP参加交渉","TPP慎重派","TPP事前協議","TPP推進派","TPPとEUの共通点","TPP途中離脱","TPP亡国論","TPPを慎重に考える会","TVO","T+1","Tホーク",
                     "Tポイント","低硫黄化軽油","低硫黄軽油","帝位継承権","低インフレ","低インフレーション","低カリウムメロン","定期給与","定期接種","定期予防接種","低金利通貨","テイク・アンド・ペイ契約","テイク・オア・ペイ契約",
@@ -775,7 +777,8 @@ class JijiWordStore: WordStore{
                     "テスラモーターズ","鉄道運賃改定","鉄肺","鉄マンガン鉱床","テニューリン4","テバトロン","テバトロン粒子加速器","テブチウロン","テマケリア","手元資金","テラベクレル","テリトリー制","テルペニア岬",
                     "テルペニエ岬","テルペニヤ岬","テルル129","テルル129m","テルル132","テレビ・ジャーナリズム賞","テレビ受信者支援センター","テレビジョン・ジャーナリズム・アワード","テレビ・ジャーナリズム・アワード",
                     "天安沈没事件","天安門車両突入事件","天安門事件","天安門突入事件","点火スイッチ","転換点持ち合い","転換点保ち合い","転換点もちあい","天外天","天外天ガス田","天空の城","天宮1号","天国から帰ってきた少年",
-                    "天井圏","天井三日底百日","天井3日底100日","10スタッドホイール","天体ヒミコ",]
+                    "天井圏","天井三日底百日","天井3日底100日","10スタッドホイール","天体ヒミコ","店頭株相場帳","店頭シェア","店頭登録基準","天然ガス火力発電","天然ダム","天皇の公務の定年制","天皇陛下御即位二十年をお祝いする国民祭典",
+                    ]
         
         
         return ReturnWordArray

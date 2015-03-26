@@ -9,11 +9,11 @@
 import Foundation
 
 class WorldHistoryWordStore:WordStore{
-    func returnCaption() -> String{
+    override func returnCaption() -> String{
         return "世界史用語"
     }
     
-    func ReturningWordArray() -> Array<String>{
+    override func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         var wordArray = ["地質年代","新生代","第３紀","第４紀","更新世","洪積世","氷河期","氷期","間氷期","完新世","沖積世",
             "後氷期","旧大陸","人類","直立二足歩行","道具","石器","類人猿","化石人類","猿人","ラミダス猿人",

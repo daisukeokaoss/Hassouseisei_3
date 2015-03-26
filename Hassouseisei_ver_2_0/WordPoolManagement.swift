@@ -34,4 +34,15 @@ class WordPoolManagement{
         self.WordPoolArray = []
 
     }
+    
+    func WordPoolCount() -> Int
+    {
+        var TotalWordArray:Array<String> = []
+        for(var i=0;i<self.WordPoolArray.count;i++){
+            if(self.WordPoolArray[i].WordSwitchOn == true){
+                TotalWordArray += self.WordPoolArray[i].ReturningWordArray()
+            }
+        }
+        return TotalWordArray.count
+    }
 }

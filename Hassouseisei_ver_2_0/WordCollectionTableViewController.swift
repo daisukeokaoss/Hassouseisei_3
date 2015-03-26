@@ -10,9 +10,14 @@ import UIKit
 
 class WordCollectionTableViewController: UITableViewController {
 
-    var WordCountLabel:UILabel
+    @IBAction func WordCollectionChange(sender: UISwitch) {
+        var delegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        
+        WordCountLabel.text = "ワード数は"+delegate.wordpoolmanage.WordPoolCount().description+"個です"
+        
+    }
     
-    var someWordTableCell:array<
+    var WordCountLabel:UILabel!
     
 
     override func viewDidLoad() {
@@ -55,7 +60,7 @@ class WordCollectionTableViewController: UITableViewController {
         
         if(indexPath.section == 0 && ((indexPath.row >= 0) && (indexPath.row < (delegate.wordpoolmanage.WordPoolArray.count ?? 0)))){
             
-            var cell:SomeWordUITableCell = tableView.dequeueReusableCellWithIdentifier("SomeWordCollection", forIndexPath: indexPath) as SomeWordUITableCell
+            var cell:SomeWordUITableCell = tableView.dequeueReusableCellWithIdentifier("SomeWordCollectionCell", forIndexPath: indexPath) as SomeWordUITableCell
             
             
             var wordstore:WordStore?
@@ -70,6 +75,8 @@ class WordCollectionTableViewController: UITableViewController {
             
         }else{
             let cell:WordCountTableViewCell = tableView.dequeueReusableCellWithIdentifier("WordCountCell", forIndexPath: indexPath) as WordCountTableViewCell
+            
+            
         
             return cell
         }

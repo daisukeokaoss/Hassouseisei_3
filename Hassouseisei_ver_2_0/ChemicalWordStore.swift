@@ -9,11 +9,11 @@
 import Foundation
 
 class ChemicalWordStore:WordStore{
-    func returnCaption() -> String{
+    override func returnCaption() -> String{
         return "化学用語"
     }
     
-    func ReturningWordArray() -> Array<String>{
+    override func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         
         var wordArray = ["アーク炉","R/S表示法","RNA","RM電池","藍","IR","IIR","iso","ISO","ISO規格",

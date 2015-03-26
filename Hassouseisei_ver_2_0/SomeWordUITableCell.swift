@@ -11,10 +11,19 @@ import UIKit
 class SomeWordUITableCell: UITableViewCell {
 
     @IBAction func WordSwitchClicked(sender: UISwitch) {
-        if(sender.on == true){
-            self.SwitchOn = true
-        }else {
-            self.SwitchOn = false
+        var delegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        
+        for (var i=0;i<delegate.wordpoolmanage.WordPoolArray.count; i++){
+            if(self.SomeWordLabel.text == delegate.wordpoolmanage.WordPoolArray[i].returnCaption()){
+                if(sender.on == true){
+                    delegate.wordpoolmanage.WordPoolArray[i].WordSwitchOn = true
+                }else{
+                    delegate.wordpoolmanage.WordPoolArray[i].WordSwitchOn = false
+                }
+                
+                delegate.wordpoolmanage.WordPoolCount()
+                
+            }
         }
     }
     @IBOutlet weak var SomeWordLabel: UILabel!

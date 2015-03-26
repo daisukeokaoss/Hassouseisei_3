@@ -8,10 +8,31 @@
 
 import Foundation
 
-protocol WordStore{
+class WordStore{
+    var WordSwitchOn: Bool
+        {
+        get{
+            return self.WordSwitchOn
+        }
+        set{
+            self.WordSwitchOn = newValue
+        }
+    }
     
-    func returnCaption() -> String
+    func returnCaption() -> String{
+        return ""
+    }
+
     
-    func ReturningWordArray() -> Array<String>
+    func ReturningWordArray() -> Array<String>{
+        return []
+    }
+    //var wordEnable
+
+
     
 }
+
+
+
+

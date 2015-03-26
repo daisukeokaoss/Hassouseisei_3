@@ -10,11 +10,11 @@ import Foundation
 
 class PhysicalWordStore:WordStore{
 
-    func returnCaption() -> String{
+    override func returnCaption() -> String{
         return "物理学用語"
     }
 
-    func ReturningWordArray() -> Array<String>{
+    override func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         
         var wordArray = ["アーク","アーク光源","アークスペクトル","アーク灯","アーク放電","アーク炉","アース","アース電位","RI","RI実験室","RAM","RM電池","ROM","アーンショーの定理",

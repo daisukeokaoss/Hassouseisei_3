@@ -10,11 +10,11 @@ import Foundation
 
 
 class ShokenWordStore: WordStore{
-    func returnCaption() -> String{
+    override func returnCaption() -> String{
         return "証券用語"
     }
     
-    func ReturningWordArray() -> Array<String>{
+    override func ReturningWordArray() -> Array<String>{
         var ReturnWordArray:[String] = []
         
         //http://www.nomura.co.jp/terms/a_index.html
