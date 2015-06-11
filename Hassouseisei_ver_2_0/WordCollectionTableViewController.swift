@@ -11,7 +11,7 @@ import UIKit
 class WordCollectionTableViewController: UITableViewController {
 
     @IBAction func WordCollectionChange(sender: UISwitch) {
-        var delegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        var delegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         WordCountLabel.text = "ワード数は"+delegate.wordpoolmanage.WordPoolCount().description+"個です"
         
@@ -44,7 +44,7 @@ class WordCollectionTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(section == 0){
-            var delegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+            var delegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
             return (delegate.wordpoolmanage.WordPoolArray.count ?? 0)+1
         }
@@ -54,13 +54,13 @@ class WordCollectionTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var delegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        var delegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         
         
         if(indexPath.section == 0 && ((indexPath.row >= 0) && (indexPath.row < (delegate.wordpoolmanage.WordPoolArray.count ?? 0)))){
             
-            var cell:SomeWordUITableCell = tableView.dequeueReusableCellWithIdentifier("SomeWordCollectionCell", forIndexPath: indexPath) as SomeWordUITableCell
+            var cell:SomeWordUITableCell = tableView.dequeueReusableCellWithIdentifier("SomeWordCollectionCell", forIndexPath: indexPath) as! SomeWordUITableCell
             
             
             var wordstore:WordStore?
@@ -74,7 +74,7 @@ class WordCollectionTableViewController: UITableViewController {
 
             
         }else{
-            let cell:WordCountTableViewCell = tableView.dequeueReusableCellWithIdentifier("WordCountCell", forIndexPath: indexPath) as WordCountTableViewCell
+            let cell:WordCountTableViewCell = tableView.dequeueReusableCellWithIdentifier("WordCountCell", forIndexPath: indexPath) as! WordCountTableViewCell
             
             
         
@@ -85,7 +85,7 @@ class WordCollectionTableViewController: UITableViewController {
     
     func countFullWordArrayCount()-> Int
     {
-        var delegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        var delegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         var totalArray:Array<String> = []
         
        /* for var i = 0 ; i < self.SomeWordsCellCollection.count; i++ {
