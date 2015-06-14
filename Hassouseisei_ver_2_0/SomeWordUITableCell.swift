@@ -21,7 +21,7 @@ class SomeWordUITableCell: UITableViewCell {
                     delegate.wordpoolmanage.WordPoolArray[i].WordSwitchOn = false
                 }
                 
-                delegate.wordpoolmanage.WordPoolCount()
+                delegate.wordpoolmanage.WordPoolCountAndPlot()
                 
             }
         }

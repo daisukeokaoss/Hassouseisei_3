@@ -96,6 +96,9 @@
                                         <constraint firstItem="4Mv-GA-7uZ" firstAttribute="leading" secondItem="PGN-AA-TEI" secondAttribute="leadingMargin" constant="9" id="FBF-7H-aWe"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="CountingWordLabel" destination="4Mv-GA-7uZ" id="8gQ-zE-fY2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

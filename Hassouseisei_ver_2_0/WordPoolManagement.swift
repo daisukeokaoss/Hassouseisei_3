@@ -24,9 +24,10 @@ class WordPoolManagement{
         var GameWord:WordStore     = GameWordStore()
         var Physical:WordStore     = PhysicalWordStore()
         var worldHistory:WordStore  = WorldHistoryWordStore()
+        var jijiWord:WordStore = JijiWordStore()
         self.WordPoolArray += [ITWord,MedicalWord,OpticalWord,ModernSocial]
         self.WordPoolArray += [Biological,Chemical,Elementary,Ethical,GameWord]
-        self.WordPoolArray += [Physical,worldHistory]
+        self.WordPoolArray += [Physical,worldHistory,jijiWord]
         
     }
     
@@ -44,5 +45,15 @@ class WordPoolManagement{
             }
         }
         return TotalWordArray.count
+    }
+    
+    func WordPoolCountAndPlot()
+    {
+        var count:Int = WordPoolCount()
+        //NSNotificationのインスタンスを作成。["value":100]という辞書型のデータを持たせる
+        var n:NSNotification = NSNotification(name: "wordCount", object: self, userInfo: ["value": count])
+        //通知を送る
+        NSNotificationCenter.defaultCenter().postNotification(n)
+
     }
 }
