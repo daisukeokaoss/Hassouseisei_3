@@ -12,12 +12,14 @@ class WordStore{
     var WordSwitchOn: Bool
         {
         get{
-            return self.WordSwitchOn
+            return self.wordSwitch
         }
         set{
-            self.WordSwitchOn = newValue
+            self.wordSwitch = newValue
         }
     }
+    
+    var wordSwitch:Bool = false
     
     func returnCaption() -> String{
         return ""

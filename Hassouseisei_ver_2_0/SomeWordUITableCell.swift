@@ -11,7 +11,7 @@ import UIKit
 class SomeWordUITableCell: UITableViewCell {
 
     @IBAction func WordSwitchClicked(sender: UISwitch) {
-        var delegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        var delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         for (var i=0;i<delegate.wordpoolmanage.WordPoolArray.count; i++){
             if(self.SomeWordLabel.text == delegate.wordpoolmanage.WordPoolArray[i].returnCaption()){
