@@ -102,10 +102,10 @@ class DOFlatButton :UIButton
         self.dofb_init()
     }
     
-    override init(){
+    /*override convenience init(){
         super.init()
         self.dofb_init()
-    }
+    }*/
     
     func dofb_init()
     {
@@ -157,7 +157,7 @@ class DOFlatButton :UIButton
         }
     }
     
-    var Highlighted:Bool{
+    override var highlighted:Bool{
         set{
             super.highlighted = newValue
             self.setNeedsDisplay()
@@ -187,7 +187,7 @@ class DOFlatButton :UIButton
         }
     }
     
-    func setFaceColor(faceColor:UIColor){
+    private func setFaceColor(faceColor:UIColor){
         self.setFaceColor(faceColor, state: UIControlState.Normal)
         self.setFaceColor(faceColor, state: UIControlState.Highlighted)
         self.setFaceColor(faceColor, state: UIControlState.Selected)
@@ -195,7 +195,7 @@ class DOFlatButton :UIButton
 
     }
     
-    func setBorderColor(borderColor:UIColor){
+    private func setBorderColor(borderColor:UIColor){
         self.setBorderColor(borderColor, state: UIControlState.Normal)
         self.setBorderColor(borderColor, state: UIControlState.Highlighted)
         self.setBorderColor(borderColor, state: UIControlState.Selected)
