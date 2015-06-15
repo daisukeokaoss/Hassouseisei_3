@@ -99,10 +99,28 @@ class WordPlotScrollView: UIScrollView {
         self.generateButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         self.generateButton.setTitle("Push", forState: UIControlState.Normal)
         
+        self.generateButton.addTarget(self, action: "generateButtonClick:", forControlEvents:.TouchDown)
+        
         self.addSubview(self.generateButton)
         
         
     }
+    
+    @IBAction func generateButtonClick(sender: AnyObject)
+    {
+        var delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        var WordArray = delegate.wordpoolmanage.outputManyWord(8)
+        
+        if( WordArray.count > 0){
+            self.Label1st.text = WordArray[0]
+            self.Label2nd.text = WordArray[1]
+            
+            
+        }
+        
+    }
+    
+    
 
 
 }

@@ -19,7 +19,7 @@ class WordStore{
         }
     }
     
-    var wordSwitch:Bool = false
+    internal var wordSwitch:Bool = false
     
     func returnCaption() -> String{
         return ""

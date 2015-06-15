@@ -29,6 +29,20 @@ class WordPoolManagement{
         self.WordPoolArray += [Biological,Chemical,Elementary,Ethical,GameWord]
         self.WordPoolArray += [Physical,worldHistory,jijiWord]
         
+        
+        self.UserDefaultToSettings()
+        
+    }
+    
+    func UserDefaultToSettings()
+    {
+        let ud = NSUserDefaults.standardUserDefaults()
+        
+        for pool in self.WordPoolArray
+        {
+            pool.WordSwitchOn = ud.boolForKey(pool.returnCaption())
+            
+        }
     }
     
     func StoreWordPoolArray(){
@@ -47,6 +61,17 @@ class WordPoolManagement{
         return TotalWordArray.count
     }
     
+    func returnWordPoolArray() -> Array<String>
+    {
+        var TotalWordArray:Array<String> = []
+        for(var i=0;i<self.WordPoolArray.count;i++){
+            if(self.WordPoolArray[i].WordSwitchOn == true){
+                TotalWordArray += self.WordPoolArray[i].ReturningWordArray()
+            }
+        }
+        return TotalWordArray
+    }
+    
     func WordPoolCountAndPlot()
     {
         var count:Int = WordPoolCount()
@@ -54,6 +79,62 @@ class WordPoolManagement{
         var n:NSNotification = NSNotification(name: "wordCount", object: self, userInfo: ["value": count])
         //通知を送る
         NSNotificationCenter.defaultCenter().postNotification(n)
+
+    }
+    
+    func outputManyWord(NumberOfWord: Int) -> Array<String>
+    {
+        
+        START: do{
+            var indexArray:Array<Int> = []
+            var wordArray:Array<String> = []
+            
+            var words:Array<String> = returnWordPoolArray()
+            
+            if words.count > 0 {
+                
+                for var i:Int = 0;i<NumberOfWord;i++ {
+                    CLEAR: do{
+    
+                        var index:Int = Int(arc4random() % UInt32(words.count))
+                        for var j=0;j<i;j++ {
+                            if indexArray[j] == index {
+                                
+                                
+                                continue CLEAR;
+                            }
+                        }
+                        indexArray.append(index)
+                    }while false
+                }
+        
+        
+            
+                for var i=0;i<NumberOfWord;i++ {
+                    wordArray.append(words[indexArray[i]])
+                }
+                
+                for var i=0;i<wordArray.count ;i++ {
+                    for var j=0;j<i;j++ {
+                        if wordArray[j] == wordArray[i] {
+                            continue START
+                        }
+                    }
+                }
+                
+                /*for var i=0;i < wordArray.count;i++ {
+                    wordArray[i] == ""
+                    continue START
+                }*/
+                return wordArray
+            }else{
+                return []
+            }
+        
+            
+        }while(false)
+        
+        return []
 
     }
 }
