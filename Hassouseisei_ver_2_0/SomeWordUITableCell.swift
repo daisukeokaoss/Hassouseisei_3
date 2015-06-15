@@ -35,6 +35,20 @@ class SomeWordUITableCell: UITableViewCell {
     
     func SetCaption(cap :String){
         SomeWordLabel.text = cap
+        let ud = NSUserDefaults.standardUserDefaults()
+        
+        
+        
+        if SomeWordLabel.text != nil{
+            /*if ud.boolForKey(SomeWordLabel.text!) {
+                EnableOrDisableWordPoolSwitch.setOn(false, animated: false)
+            }else{*/
+                EnableOrDisableWordPoolSwitch.setOn(ud.boolForKey(SomeWordLabel.text!), animated: false)
+           // }
+            
+        }
+        
+        
     }
     
     internal var SwitchOn:Bool = true
@@ -44,5 +58,28 @@ class SomeWordUITableCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "finalzie_UI:", name: "Finalize", object: nil)
+        
+        
+    }
+    
+    
+    
+    
+    
+    //関数で受け取った時のアクションを定義
+    func finalzie_UI(notification: NSNotification)  {
+        let ud = NSUserDefaults.standardUserDefaults()
+        
+        ud.setBool(EnableOrDisableWordPoolSwitch.on, forKey: SomeWordLabel.text!)
+            
+       
+    }
+    
+   
 
 }

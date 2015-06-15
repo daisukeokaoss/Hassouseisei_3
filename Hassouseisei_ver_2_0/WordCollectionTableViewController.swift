@@ -10,14 +10,14 @@ import UIKit
 
 class WordCollectionTableViewController: UITableViewController {
 
-    @IBAction func WordCollectionChange(sender: UISwitch) {
+ /*   @IBAction func WordCollectionChange(sender: UISwitch) {
         var delegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         WordCountLabel.text = "ワード数は"+delegate.wordpoolmanage.WordPoolCount().description+"個です"
         
-    }
+    }*/
     
-    var WordCountLabel:UILabel!
+    //var WordCountLabel:UILabel!
     
 
     override func viewDidLoad() {
@@ -29,6 +29,14 @@ class WordCollectionTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
        
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        var n : NSNotification = NSNotification(name: "Finalize", object: self, userInfo: nil)
+        //通知を送る
+        NSNotificationCenter.defaultCenter().postNotification(n)
     }
 
     override func didReceiveMemoryWarning() {
