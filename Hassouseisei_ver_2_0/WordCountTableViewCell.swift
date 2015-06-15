@@ -34,6 +34,8 @@ class WordCountTableViewCell: UITableViewCell {
     
     func update(notification: NSNotification)
     {
+
+        
         if let userInfo = notification.userInfo {
             let result = userInfo["value"]! as! Int
             CountingWordLabel.text = "ワード数は" + String(result) + "個です。"

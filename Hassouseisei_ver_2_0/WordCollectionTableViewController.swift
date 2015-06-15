@@ -28,7 +28,13 @@ class WordCollectionTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-       
+
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        var delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        delegate.wordpoolmanage.WordPoolCountAndPlot()
     }
     
     override func viewDidDisappear(animated: Bool) {

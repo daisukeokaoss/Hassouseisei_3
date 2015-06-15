@@ -9,13 +9,14 @@
 import UIKit
 
 class SomeWordUITableCell: UITableViewCell {
-
-    @IBAction func WordSwitchClicked(sender: UISwitch) {
+    
+    
+    func WordSwitchChanged(){
         var delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         for (var i=0;i<delegate.wordpoolmanage.WordPoolArray.count; i++){
             if(self.SomeWordLabel.text == delegate.wordpoolmanage.WordPoolArray[i].returnCaption()){
-                if(sender.on == true){
+                if(EnableOrDisableWordPoolSwitch.on == true){
                     delegate.wordpoolmanage.WordPoolArray[i].WordSwitchOn = true
                 }else{
                     delegate.wordpoolmanage.WordPoolArray[i].WordSwitchOn = false
@@ -25,6 +26,12 @@ class SomeWordUITableCell: UITableViewCell {
                 
             }
         }
+        
+    }
+
+
+    @IBAction func WordSwitchClicked(sender: UISwitch) {
+        self.WordSwitchChanged()
     }
     @IBOutlet weak var SomeWordLabel: UILabel!
     @IBOutlet weak var EnableOrDisableWordPoolSwitch: UISwitch!
@@ -40,13 +47,15 @@ class SomeWordUITableCell: UITableViewCell {
         
         
         if SomeWordLabel.text != nil{
-            /*if ud.boolForKey(SomeWordLabel.text!) {
-                EnableOrDisableWordPoolSwitch.setOn(false, animated: false)
-            }else{*/
+           
                 EnableOrDisableWordPoolSwitch.setOn(ud.boolForKey(SomeWordLabel.text!), animated: false)
-           // }
+          
             
         }
+        
+       WordSwitchChanged()
+        
+        
         
         
     }
