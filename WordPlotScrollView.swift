@@ -114,6 +114,12 @@ class WordPlotScrollView: UIScrollView {
         if( WordArray.count > 0){
             self.Label1st.text = WordArray[0]
             self.Label2nd.text = WordArray[1]
+            self.Label3rd.text = WordArray[2]
+            self.Label4th.text = WordArray[3]
+            self.Label5th.text = WordArray[4]
+            self.Label6th.text = WordArray[5]
+            self.Label7th.text = WordArray[6]
+            self.Label8th.text = WordArray[7]
             
             
         }
