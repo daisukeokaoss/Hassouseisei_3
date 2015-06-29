@@ -28,7 +28,7 @@ class WordPoolManagement{
         self.WordPoolArray += [ITWord,MedicalWord,OpticalWord,ModernSocial]
         self.WordPoolArray += [Biological,Chemical,Elementary,Ethical,GameWord]
         self.WordPoolArray += [Physical,worldHistory,jijiWord]
-        
+        //self.WordPoolArray += [Physical,worldHistory]
         
         self.UserDefaultToSettings()
         
