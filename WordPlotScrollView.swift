@@ -80,6 +80,25 @@ class WordPlotScrollView: UIScrollView {
         self.contentSize = CGSize(width: X_Label + self.Label1st.sizeThatFits(CGSize(width: 1000, height: 1000)).width, height: self.bounds.size.height)
         //self.sizeThatFits(CGSize(width: X_Label + self.Label1st.bounds.size.width, height: UIScreen.mainScreen().bounds.size.height))
         
+        
+        self.Label1st.userInteractionEnabled = true
+        self.Label2nd.userInteractionEnabled = true
+        self.Label3rd.userInteractionEnabled = true
+        self.Label4th.userInteractionEnabled = true
+        self.Label5th.userInteractionEnabled = true
+        self.Label6th.userInteractionEnabled = true
+        self.Label7th.userInteractionEnabled = true
+        self.Label8th.userInteractionEnabled = true
+        
+        self.Label1st.tag = 1
+        self.Label2nd.tag = 2
+        self.Label3rd.tag = 3
+        self.Label4th.tag = 4
+        self.Label5th.tag = 5
+        self.Label6th.tag = 6
+        self.Label7th.tag = 7
+        self.Label8th.tag = 8
+        
         self.addSubview(self.Label1st)
         self.addSubview(self.Label2nd)
         self.addSubview(self.Label3rd)
@@ -110,9 +129,43 @@ class WordPlotScrollView: UIScrollView {
         
         self.generateButton.addTarget(self, action: "generateButtonClick:", forControlEvents:.TouchDown)
         
+        
+        
+        
         self.addSubview(self.generateButton)
         
         
+    }
+    
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        super.touchesEnded(touches, withEvent: event)
+        
+        for touch: AnyObject in touches {
+            var t: UITouch = touch as! UITouch
+            if t.view.tag == self.Label1st.tag {
+                
+            }else if t.view.tag == self.Label2nd.tag{
+                
+            }else if t.view.tag == self.Label3rd.tag{
+                
+            }else if t.view.tag == self.Label4th.tag{
+                
+            }else if t.view.tag == self.Label5th.tag{
+                
+            }else if t.view.tag == self.Label6th.tag{
+                
+            }else if t.view.tag == self.Label7th.tag{
+                
+            }else if t.view.tag == self.Label8th.tag{
+                
+            }
+        }
+    }
+ 
+    
+    @IBAction func GoogleSearch(sender: AnyObject)
+    {
+          print("googlesearch")
     }
     
     @IBAction func generateButtonClick(sender: AnyObject)
@@ -175,28 +228,7 @@ class WordPlotScrollView: UIScrollView {
                 maxWidth = width
             }
             
-            //self.frame.size.width = maxWidth
-            //self.bounds.size.width = maxWidth
-            
-            //self.scrollEnabled = true
-            
             self.contentSize.width = maxWidth
-            
-            
-            
-          /*  if(self.bounds.size.width < maxWidth){
-                self.frame.size.width = maxWidth
-                
-            }else{
-                self.frame.size.width = 600
-                
-            }*/
-            
-        
-            
-            self.sizeToFit()
-            
-            
             
         }
         
