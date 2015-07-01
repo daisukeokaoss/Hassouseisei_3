@@ -66,6 +66,15 @@ class WordPlotScrollView: UIScrollView {
         self.Label7th.text = "Label7th"
         self.Label8th.text = "Label8th"
         
+        self.Label1st.text = ""
+        self.Label2nd.text = ""
+        self.Label3rd.text = ""
+        self.Label4th.text = ""
+        self.Label5th.text = ""
+        self.Label6th.text = ""
+        self.Label7th.text = ""
+        self.Label8th.text = ""
+        
         self.Label1st.sizeToFit()
         
         self.contentSize = CGSize(width: X_Label + self.Label1st.sizeThatFits(CGSize(width: 1000, height: 1000)).width, height: self.bounds.size.height)
@@ -120,6 +129,73 @@ class WordPlotScrollView: UIScrollView {
             self.Label6th.text = WordArray[5]
             self.Label7th.text = WordArray[6]
             self.Label8th.text = WordArray[7]
+            
+            self.Label1st.sizeToFit()
+            self.Label2nd.sizeToFit()
+            self.Label3rd.sizeToFit()
+            self.Label3rd.sizeToFit()
+            self.Label4th.sizeToFit()
+            self.Label5th.sizeToFit()
+            self.Label6th.sizeToFit()
+            self.Label7th.sizeToFit()
+            self.Label8th.sizeToFit()
+            
+            var maxWidth:CGFloat = 0
+            
+            var width:CGFloat = self.Label1st.bounds.origin.x + self.Label1st.bounds.size.width
+            if(width > maxWidth){
+                maxWidth = width
+            }
+            width = self.Label2nd.bounds.origin.x + self.Label2nd.bounds.size.width
+            if(width > maxWidth){
+                maxWidth = width
+            }
+            width = self.Label3rd.bounds.origin.x + self.Label3rd.bounds.size.width
+            if(width > maxWidth){
+                maxWidth = width
+            }
+            width = self.Label4th.bounds.origin.x + self.Label4th.bounds.size.width
+            if(width > maxWidth){
+                maxWidth = width
+            }
+            width = self.Label5th.bounds.origin.x + self.Label5th.bounds.size.width
+            if(width > maxWidth){
+                maxWidth = width
+            }
+            width = self.Label6th.bounds.origin.x + self.Label6th.bounds.size.width
+            if(width > maxWidth){
+                maxWidth = width
+            }
+            width = self.Label7th.bounds.origin.x + self.Label7th.bounds.size.width
+            if(width > maxWidth){
+                maxWidth = width
+            }
+            width = self.Label8th.bounds.origin.x + self.Label8th.bounds.size.width
+            if(width > maxWidth){
+                maxWidth = width
+            }
+            
+            //self.frame.size.width = maxWidth
+            //self.bounds.size.width = maxWidth
+            
+            //self.scrollEnabled = true
+            
+            self.contentSize.width = maxWidth
+            
+            
+            
+          /*  if(self.bounds.size.width < maxWidth){
+                self.frame.size.width = maxWidth
+                
+            }else{
+                self.frame.size.width = 600
+                
+            }*/
+            
+        
+            
+            self.sizeToFit()
+            
             
             
         }

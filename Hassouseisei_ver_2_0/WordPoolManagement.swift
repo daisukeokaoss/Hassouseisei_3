@@ -101,7 +101,7 @@ class WordPoolManagement{
                             if indexArray[j] == index {
                                 
                                 
-                                continue CLEAR;
+                                continue CLEAR
                             }
                         }
                         indexArray.append(index)

@@ -8,7 +8,7 @@
         <!--Item 1-->
         <scene sceneID="M1J-Zg-GQ8">
             <objects>
-                <viewController id="Qs5-4W-LWN" sceneMemberID="viewController">
+                <viewController id="Qs5-4W-LWN" customClass="WordPlotViewController" customModule="Hassouseisei_ver_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PdS-AB-llj"/>
                         <viewControllerLayoutGuide type="bottom" id="W6r-NX-ucr"/>
@@ -31,6 +31,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" image="09-chat-2.png" id="ZQ8-JK-5Fk"/>
+                    <connections>
+                        <outlet property="myWordPlotScrollView" destination="AJU-sj-o6f" id="0cf-kC-vB1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jha-Wu-Oe0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

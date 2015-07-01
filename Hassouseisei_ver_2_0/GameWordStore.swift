@@ -11,7 +11,7 @@ import Foundation
 
 class GameWordStore: WordStore{
     override func returnCaption() -> String{
-        return "世界史用語"
+        return "ゲーム用語"
     }
     
     override func ReturningWordArray() -> Array<String>{

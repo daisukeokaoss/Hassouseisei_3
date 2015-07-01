@@ -31,6 +31,10 @@ class WordCollectionTableViewController: UITableViewController {
 
     }
     
+    override func viewDidLayoutSubviews() {
+        
+    }
+    
     override func viewDidAppear(animated: Bool) {
         var delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
