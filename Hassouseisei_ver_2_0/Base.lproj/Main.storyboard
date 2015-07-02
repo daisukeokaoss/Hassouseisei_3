@@ -24,10 +24,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="AJU-sj-o6f" secondAttribute="bottom" constant="49" id="CiH-gh-hQw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="AJU-sj-o6f" secondAttribute="trailing" constant="-16" id="ZAV-Jj-TBK"/>
-                            <constraint firstItem="AJU-sj-o6f" firstAttribute="top" secondItem="oF1-oY-jp5" secondAttribute="topMargin" id="lOT-8c-HXq"/>
-                            <constraint firstItem="AJU-sj-o6f" firstAttribute="leading" secondItem="oF1-oY-jp5" secondAttribute="leadingMargin" constant="-16" id="uOj-eF-zKb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AJU-sj-o6f" secondAttribute="trailing" constant="-16" id="ACv-rK-AXV"/>
+                            <constraint firstItem="AJU-sj-o6f" firstAttribute="leading" secondItem="oF1-oY-jp5" secondAttribute="leadingMargin" constant="-16" id="VRS-Ha-wad"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="AJU-sj-o6f" secondAttribute="bottom" constant="49" id="XPM-Rn-EUp"/>
+                            <constraint firstItem="AJU-sj-o6f" firstAttribute="top" secondItem="oF1-oY-jp5" secondAttribute="topMargin" id="zTP-o4-xBQ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" image="09-chat-2.png" id="ZQ8-JK-5Fk"/>
@@ -102,6 +102,13 @@
                                 <connections>
                                     <outlet property="CountingWordLabel" destination="4Mv-GA-7uZ" id="8gQ-zE-fY2"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Blank" id="Cfa-dX-MAO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cfa-dX-MAO" id="0fm-Iy-cVE">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>

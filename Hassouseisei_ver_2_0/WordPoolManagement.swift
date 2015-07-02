@@ -94,18 +94,20 @@ class WordPoolManagement{
             if words.count > 0 {
                 
                 for var i:Int = 0;i<NumberOfWord;i++ {
+                    var flag:Bool = false
                     CLEAR: do{
+                        flag = false
     
                         var index:Int = Int(arc4random() % UInt32(words.count))
                         for var j=0;j<i;j++ {
                             if indexArray[j] == index {
                                 
-                                
+                                flag = true
                                 continue CLEAR
                             }
                         }
                         indexArray.append(index)
-                    }while false
+                    }while flag == true
                 }
         
         

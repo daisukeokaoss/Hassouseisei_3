@@ -44,11 +44,17 @@ class SomeWordUITableCell: UITableViewCell {
         SomeWordLabel.text = cap
         let ud = NSUserDefaults.standardUserDefaults()
         
+        var keyValue:NSMutableDictionary = NSMutableDictionary()
+        
+        keyValue.setObject(true, forKey: SomeWordLabel.text!)
+        
+        NSUserDefaults.standardUserDefaults().registerDefaults(keyValue as [NSObject : AnyObject])
+        
         
         
         if SomeWordLabel.text != nil{
            
-                EnableOrDisableWordPoolSwitch.setOn(ud.boolForKey(SomeWordLabel.text!), animated: false)
+            EnableOrDisableWordPoolSwitch.setOn(ud.boolForKey(SomeWordLabel.text!), animated: false)
           
             
         }

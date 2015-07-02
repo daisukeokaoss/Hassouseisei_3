@@ -12,4 +12,14 @@ class WordPlotViewController: UIViewController {
 
     
     @IBOutlet weak var myWordPlotScrollView: WordPlotScrollView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.myWordPlotScrollView.superViewController = self
+        
+        
+    }
+    
+
 }

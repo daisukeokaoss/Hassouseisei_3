@@ -11,6 +11,13 @@ import UIKit
 
 
 class WordPlotScrollView: UIScrollView {
+    
+    var superViewController:UIViewController!
+    
+    var DrawedFlag = false
+
+    
+    
     var generateButton:DOFlatButton!
     var Label1st:UILabel!
     var Label2nd:UILabel!
@@ -32,9 +39,18 @@ class WordPlotScrollView: UIScrollView {
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
         // Drawing code
-        //self.sizeThatFits(CGSize(width: UIScreen.mainScreen().bounds.size.width, height: UIScreen.mainScreen().bounds.size.height) )
         
         print("Drowed")
+        
+
+        
+        if self.DrawedFlag == false {
+            self.DrawedFlag = true
+        }else{
+            return
+        }
+        
+
         
         var Row_height = UIScreen.mainScreen().bounds.size.height/13
         var xCoordinateOfStartingWord = rect.width/24
@@ -140,40 +156,64 @@ class WordPlotScrollView: UIScrollView {
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         super.touchesEnded(touches, withEvent: event)
         
+        
+        var site:CountryOfGoogleSite = .JapaneseGoogle
+        
+        var ViewController:GoogleSearchViewColtroller = GoogleSearchViewColtroller()
+        ViewController.googlesite = site
+
+        
         for touch: AnyObject in touches {
             var t: UITouch = touch as! UITouch
             if t.view.tag == self.Label1st.tag {
-                
+                ViewController.SearchString = self.Label1st.text
             }else if t.view.tag == self.Label2nd.tag{
-                
+                ViewController.SearchString = self.Label2nd.text
             }else if t.view.tag == self.Label3rd.tag{
-                
+                ViewController.SearchString = self.Label3rd.text
             }else if t.view.tag == self.Label4th.tag{
-                
+                ViewController.SearchString = self.Label4th.text
             }else if t.view.tag == self.Label5th.tag{
-                
+                ViewController.SearchString = self.Label5th.text
             }else if t.view.tag == self.Label6th.tag{
-                
+                ViewController.SearchString = self.Label6th.text
             }else if t.view.tag == self.Label7th.tag{
-                
+                ViewController.SearchString = self.Label7th.text
             }else if t.view.tag == self.Label8th.tag{
-                
+               ViewController.SearchString = self.Label8th.text
+            }else{
+                return
             }
+            
+            ViewController.modalTransitionStyle = UIModalTransitionStyle.FlipHorizontal
+            
+            self.superViewController.presentViewController(ViewController, animated: true, completion: nil)
         }
     }
+    
+
  
     
-    @IBAction func GoogleSearch(sender: AnyObject)
-    {
-          print("googlesearch")
-    }
+
     
     @IBAction func generateButtonClick(sender: AnyObject)
     {
         var delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         var WordArray = delegate.wordpoolmanage.outputManyWord(8)
         
+        self.Label1st.text = ""
+        self.Label2nd.text = ""
+        self.Label3rd.text = ""
+        self.Label4th.text = ""
+        self.Label5th.text = ""
+        self.Label6th.text = ""
+        self.Label7th.text = ""
+        self.Label8th.text = ""
+        
         if( WordArray.count > 0){
+            
+            
+            
             self.Label1st.text = WordArray[0]
             self.Label2nd.text = WordArray[1]
             self.Label3rd.text = WordArray[2]
