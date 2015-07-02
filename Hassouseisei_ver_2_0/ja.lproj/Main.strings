@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "ワード数はなになに個です"; ObjectID = "4Mv-GA-7uZ"; */
+"4Mv-GA-7uZ.text" = "ワード数はなになに個です";
+
+/* Class = "UILabel"; text = "なになに用語"; ObjectID = "KD2-f0-hZ3"; */
+"KD2-f0-hZ3.text" = "なになに用語";
+
+/* Class = "UITabBarItem"; title = "Item 1"; ObjectID = "ZQ8-JK-5Fk"; */
+"ZQ8-JK-5Fk.title" = "Item 1";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "iE1-1e-Rf0"; */
+"iE1-1e-Rf0.title" = "Item";
