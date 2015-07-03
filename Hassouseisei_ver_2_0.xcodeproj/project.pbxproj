@@ -14,6 +14,8 @@
 		70577C111B4574C6008260D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70577C101B4574C6008260D7 /* InfoPlist.strings */; };
 		70577C131B457607008260D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70577C101B4574C6008260D7 /* InfoPlist.strings */; };
 		707A90E11AB5F6CD00092C72 /* JijiWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A90E01AB5F6CD00092C72 /* JijiWord.swift */; };
+		709711FF1B46B8F000D0B6A3 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */; };
+		709712011B46B93400D0B6A3 /* IdeaGeneratorのアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 709712001B46B93400D0B6A3 /* IdeaGeneratorのアイコン.png */; };
 		70B9029C1AA6D8AD002D14D9 /* WordPlotScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */; };
 		70BD23111AA1BB9F004B6C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */; };
 		70BD23161AA1BB9F004B6C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BD23141AA1BB9F004B6C43 /* Main.storyboard */; };
@@ -60,6 +62,8 @@
 		70577C0C1B43EFF4008260D7 /* EngineeringWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineeringWordStore.swift; sourceTree = "<group>"; };
 		70577C101B4574C6008260D7 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = ../InfoPlist.strings; sourceTree = "<group>"; };
 		707A90E01AB5F6CD00092C72 /* JijiWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JijiWord.swift; sourceTree = "<group>"; };
+		709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		709712001B46B93400D0B6A3 /* IdeaGeneratorのアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IdeaGeneratorのアイコン.png"; sourceTree = "<group>"; };
 		70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordPlotScrollView.swift; path = ../WordPlotScrollView.swift; sourceTree = "<group>"; };
 		70BD230B1AA1BB9F004B6C43 /* Hassouseisei_ver_2_0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hassouseisei_ver_2_0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BD230F1AA1BB9F004B6C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				70FCA3311ABF053C00509B04 /* DOFlatButton.swift */,
 				70577C0A1B43A604008260D7 /* GoogleSearchViewController.swift */,
 				70BD23171AA1BB9F004B6C43 /* Images.xcassets */,
+				709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */,
+				709712001B46B93400D0B6A3 /* IdeaGeneratorのアイコン.png */,
 				70BD23301AA1C9E7004B6C43 /* JapaneseWord */,
 				70BD234B1AA26C75004B6C43 /* 09-chat-2.png */,
 				70BD234C1AA26C75004B6C43 /* 09-chat-2@2x.png */,
@@ -284,9 +290,11 @@
 			files = (
 				70BD23511AA26C75004B6C43 /* 15-tags.png in Resources */,
 				70577C131B457607008260D7 /* InfoPlist.strings in Resources */,
+				709712011B46B93400D0B6A3 /* IdeaGeneratorのアイコン.png in Resources */,
 				70BD23161AA1BB9F004B6C43 /* Main.storyboard in Resources */,
 				70BD23501AA26C75004B6C43 /* 09-chat-2@2x.png in Resources */,
 				70BD234F1AA26C75004B6C43 /* 09-chat-2.png in Resources */,
+				709711FF1B46B8F000D0B6A3 /* Launch Screen.xib in Resources */,
 				70BD23521AA26C75004B6C43 /* 15-tags@2x.png in Resources */,
 				70BD23181AA1BB9F004B6C43 /* Images.xcassets in Resources */,
 			);
@@ -448,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -465,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
