@@ -40,20 +40,46 @@ class WordPlotScrollView: UIScrollView {
     override func drawRect(rect: CGRect) {
         // Drawing code
         
+        self.drawUserInterface()
+
+        
+        
+    }
+    
+    internal func drawUserInterface(var height:CGFloat = 0,var width:CGFloat = 0)
+    {
+        if height == 0{
+            height = UIScreen.mainScreen().bounds.size.height
+        }
+        
+        if width == 0{
+            width = UIScreen.mainScreen().bounds.size.width
+        }
         print("Drowed")
         
-
         
         if self.DrawedFlag == false {
             self.DrawedFlag = true
         }else{
-            return
+            self.Label1st.removeFromSuperview()
+            self.Label2nd.removeFromSuperview()
+            self.Label3rd.removeFromSuperview()
+            self.Label4th.removeFromSuperview()
+            self.Label5th.removeFromSuperview()
+            self.Label6th.removeFromSuperview()
+            self.Label7th.removeFromSuperview()
+            self.Label8th.removeFromSuperview()
+            self.generateButton.removeFromSuperview()
         }
+        
+        
         
 
         
-        var Row_height = UIScreen.mainScreen().bounds.size.height/13
-        var xCoordinateOfStartingWord = rect.width/24
+        
+        
+        var Row_height = height/13
+        var xCoordinateOfStartingWord = width/24
         
         var LabelHeight = CGFloat(30)
         
@@ -149,9 +175,9 @@ class WordPlotScrollView: UIScrollView {
         
         
         self.addSubview(self.generateButton)
-        
-        
     }
+    
+
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         super.touchesEnded(touches, withEvent: event)

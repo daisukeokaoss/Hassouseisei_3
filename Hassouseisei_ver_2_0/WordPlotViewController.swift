@@ -21,5 +21,16 @@ class WordPlotViewController: UIViewController {
         
     }
     
+    override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
+        if  (UIDevice.currentDevice().userInterfaceIdiom == .Pad) {
+            if(toInterfaceOrientation == UIInterfaceOrientation.LandscapeRight || toInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft){
+                self.myWordPlotScrollView.drawUserInterface(height: UIScreen.mainScreen().bounds.width, width: UIScreen.mainScreen().bounds.height)
+            }else{
+                self.myWordPlotScrollView.drawUserInterface(height: UIScreen.mainScreen().bounds.width, width: UIScreen.mainScreen().bounds.height)
+            }
+        
+        }
+        
+    }
 
 }
