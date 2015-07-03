@@ -9,7 +9,7 @@
 import Foundation
 
 class WordStore{
-    var WordSwitchOn: Bool
+    var WordSwitchOn: Bool 
         {
         get{
             return self.wordSwitch
@@ -19,7 +19,7 @@ class WordStore{
         }
     }
     
-    internal var wordSwitch:Bool = false
+    internal var wordSwitch:Bool = true
     
     func returnCaption() -> String{
         return ""

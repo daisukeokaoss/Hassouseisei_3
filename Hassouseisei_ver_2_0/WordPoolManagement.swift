@@ -38,8 +38,17 @@ class WordPoolManagement{
     {
         let ud = NSUserDefaults.standardUserDefaults()
         
+        
+
+        
         for pool in self.WordPoolArray
         {
+            var keyValue:NSMutableDictionary = NSMutableDictionary()
+            
+            keyValue.setObject(true, forKey: pool.returnCaption())
+            
+            NSUserDefaults.standardUserDefaults().registerDefaults(keyValue as [NSObject : AnyObject])
+            
             pool.WordSwitchOn = ud.boolForKey(pool.returnCaption())
             
         }
