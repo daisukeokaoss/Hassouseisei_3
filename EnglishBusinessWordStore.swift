@@ -105,7 +105,47 @@ class EnglishBusinessWordStore: WordStore {
             "Actuarial Approach for Financial Risks","actuarial assumption","actuarial calculation factor","actuarial consultant","actuarial cost method","actuarial deficiency",
             "actuarial funding method","actuarial gain or loss","actuarial guideline","actuarial increase","actuarial investigation","actuarial liability","actuarial mathematics",
             "actuarial methodology","Actuarial Opinion and Memorandum","actuarial present value","actuarial principle","actuarial profession","actuarial rating","actuarial reduction",
-            "actuarial report","Actuarial Research Clearing House","actuarial revaluation","actuarial science",]
+            "actuarial report","Actuarial Research Clearing House","actuarial revaluation","actuarial science","Actuarial services","Actuarial Society of America","Actuarial Standard of Practice",
+            "Actuarial Standards Board","Actuarial Studies in Non-Life Insurance","actuarial valuation","Actuaries Mortality Table","Actuaries' Investment Index","actuary",
+            "acupuncture","Acupuncture and moxibustion apparatus","Acupuncture and moxibustion equipment","Acupuncture apparatus suitable for home use","Acupuncture needles",
+            "Acupuncture point detectors","acute cardiac insufficiency","acute care","acute disease","acute health care","ad hoc adjustment","ad hoc adjustment of salary base or flant benefit accruals",
+            "ad hoc increase","Ad Hoc Liaison Committee","Ad Hoc Liasion Committee","ad valorem tax","AD&D","Ad-balloons","ADA","Adalet ve Kalkinma Partisi","adaptability","adaptation training",
+            "Adaptive controlled robots","adaptive expectations","Adaptors","ADB","add-on","add-on option","add-on tax","added value","Added value base","added years","Adding machines",
+            "addition","additional benefit","additional commission","additional condition","additional coverage","additional minimum liability","Additional Pension","additional premium",
+            "additional risk","additional risks","additional voluntary contribution","Additives to fodder for medical purposes","Additives to fodder, not for medical purposes",
+            "Additives, chemical, to drilling muds","Additives, chemical, to fungicides","Additives, chemical, to insecticides","Additives, chemical, to motor fuel","Additives, non-chemical, to Motor fuel",
+            "Additives, non-chemical, to motor-fuel","Address books and visiting cardfolders","Address plates for addressing machines","Address stamps","Addressing machines",
+            "ADEA","Adenine and preparations","Adenium roem","Adenosine and preparations","ADF","Adhesion pumps","Adhesive","Adhesive bands for medical purposes","Adhesive bands for pulleys",
+            "Adhesive bands for stationery or household purposes","Adhesive bands other than stationery and not for medical or household purposes","Adhesive Bands, for medical purposes",
+            "Adhesive fabric for application by heat","Adhesive plaster","Adhesive plasters","Adhesive preparations for surgical bandages","Adhesive rubber patches for repairing Inner tubes",
+            "Adhesive rubber Patches for repairing inner tubes","Adhesive tape dispensers","Adhesive tapes for medical purposes","Adhesive tapes for stationery or household purposes",
+            "Adhesive tapes other than stationery and not for medical or household purposes","Adhesive Tapes, for medical purposes",
+            "Adhesive Tapes, other than stationery and not for medical or household purposes","Adhesives","Adhesives for affixing false Eyelashes","Adhesives for affixing false hair",
+            "Adhesives for billposting","Adhesives for cosmetic purposes","Adhesives for dentures","Adhesives for industrial purposes","Adhesives for paperhanging",
+            "Adhesives for stationery or household purposes","Adhesives for wall tiles","Adhesives for Wallpaper","Adhesives, other than for stationery or household purposes",
+            "Adiantum","Adipate plasticizers","Adipic acid","adjudicator","adjust economy","adjust something to demand","adjust supply and demand","adjust the discount rate",
+            "Adjustable adapters","Adjustable lathe dogs","adjustable life insurance","adjustable premium","Adjustable rack clamps","Adjustable rack type blocks","adjustable rate mortgage",
+            "adjustable rate preferred","Adjustable reamers","Adjustable reamers with pilot","Adjustable round split dies","Adjustable table single action single crank presses",
+            "Adjustable wrenches","adjusted death rate","Adjusted Earnings","adjusted gross income","adjusted pay-as-you-go system","adjusted pension plan","adjusted premium",
+            "adjusted premium method","adjusted surplus","adjustment bond","adjustment for risk and uncertainty","Adjuvants for medical purposes","ADL","administered price",
+            "administration","administration charge","administration cost","administration expenses","Administration on Aging","administrative agency","administrative charge",
+            "administrative cost","administrative expenses","administrative fee","administrative guidance","administrative law","administrative license procedure","Administrative processing of purchase orders",
+            "administrative remedy","administrative rules and regulations","administrative services only","administrative services only contract","administrator","admissible assets",
+            "admission","Admission tickets","admitted assets","admitted company","ADN","adoption","Adoption agency services","ADP","ADP test","ADR","Adrenal cortex preparations",
+            "Adrenal hormone preparations","Adrenocortical hormone preparations","Adrenocorticotropic hormone preparations","ADS"]
+        
+        ReturnWordArray += wordStore
+        
+        
+        //http://ejje.weblio.jp/category/business/a/9
+        wordStore = ["ADTA","adult","Adult beef bulls","Adult beef cattle","Adult beef cattle steers","Adult beef steers","Adult boars for breeding","Adult boars for breeding, non-registered",
+            "Adult boars for breeding, registered","Adult dairy steers","adult day care","adult disease","Adult draft geldings","Adult draft horeses","Adult draft mares","Adult goats",
+            "Adult goats, female","Adult goats, female, non-registered","Adult goats, female, registered","Adult goats, male","Adult goats, male, non-registered","Adult goats, male, registered",
+            "Adult hogs for breeding","Adult sheep","Adult sows for breeding","Adult sows for breeding, registered","Adult sows for breeding,non-registered","Adult ventilators",
+            "advance","advance corporation tax","advance funded pension","advance funding","advance funding method","advance notice","advance payment","advance premium","advance receipt",
+            "advance refunding","advance to agent","advance-decline ratio","advance-in-age plan","advanced age","Advanced Financial Planning Certificate","advanced fixed fee",
+            "advanced industrial structure","advanced life underwriter","advanced life underwriting","advanced technology","advancement","advancement in age","advances paid",
+            "advances payments","advances received","adverce deviation","adverse deviations",]
         
         ReturnWordArray += wordStore
         
