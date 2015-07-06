@@ -42,6 +42,7 @@
 		70FCA3381ABFFA2200509B04 /* WordCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCA3371ABFFA2200509B04 /* WordCollectionTableViewController.swift */; };
 		70FCA33A1AC0069500509B04 /* SomeWordUITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCA3391AC0069500509B04 /* SomeWordUITableCell.swift */; };
 		70FCA33C1AC0086100509B04 /* WordCountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCA33B1AC0086100509B04 /* WordCountTableViewCell.swift */; };
+		70FE39561B483BD100A9FC17 /* EnglishBusinessWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FE39551B483BD100A9FC17 /* EnglishBusinessWordStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		70FCA3371ABFFA2200509B04 /* WordCollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCollectionTableViewController.swift; sourceTree = "<group>"; };
 		70FCA3391AC0069500509B04 /* SomeWordUITableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeWordUITableCell.swift; sourceTree = "<group>"; };
 		70FCA33B1AC0086100509B04 /* WordCountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCountTableViewCell.swift; sourceTree = "<group>"; };
+		70FE39551B483BD100A9FC17 /* EnglishBusinessWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnglishBusinessWordStore.swift; path = ../EnglishBusinessWordStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				70BD23171AA1BB9F004B6C43 /* Images.xcassets */,
 				709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */,
 				709712001B46B93400D0B6A3 /* IdeaGeneratorのアイコン.png */,
+				70FE39541B483B3600A9FC17 /* EnglishWord */,
 				70BD23301AA1C9E7004B6C43 /* JapaneseWord */,
 				70BD234B1AA26C75004B6C43 /* 09-chat-2.png */,
 				70BD234C1AA26C75004B6C43 /* 09-chat-2@2x.png */,
@@ -205,6 +208,14 @@
 				70577C0C1B43EFF4008260D7 /* EngineeringWordStore.swift */,
 			);
 			name = JapaneseWord;
+			sourceTree = "<group>";
+		};
+		70FE39541B483B3600A9FC17 /* EnglishWord */ = {
+			isa = PBXGroup;
+			children = (
+				70FE39551B483BD100A9FC17 /* EnglishBusinessWordStore.swift */,
+			);
+			name = EnglishWord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +342,7 @@
 				70FCA33C1AC0086100509B04 /* WordCountTableViewCell.swift in Sources */,
 				70BD23451AA1CA3A004B6C43 /* PhysicalWordStore.swift in Sources */,
 				70BD23401AA1CA3A004B6C43 /* BiologicalWordStore.swift in Sources */,
+				70FE39561B483BD100A9FC17 /* EnglishBusinessWordStore.swift in Sources */,
 				70B9029C1AA6D8AD002D14D9 /* WordPlotScrollView.swift in Sources */,
 				70BD23381AA1CA24004B6C43 /* OpticalWordStore.swift in Sources */,
 				70BD234A1AA1D5B9004B6C43 /* WordStore.swift in Sources */,
