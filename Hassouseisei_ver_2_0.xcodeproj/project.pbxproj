@@ -14,6 +14,7 @@
 		70577C111B4574C6008260D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70577C101B4574C6008260D7 /* InfoPlist.strings */; };
 		70577C131B457607008260D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70577C101B4574C6008260D7 /* InfoPlist.strings */; };
 		707A90E11AB5F6CD00092C72 /* JijiWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A90E01AB5F6CD00092C72 /* JijiWord.swift */; };
+		7091BC651B5037F100930842 /* JapaneseComputerBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7091BC641B5037F100930842 /* JapaneseComputerBook.swift */; };
 		709711FF1B46B8F000D0B6A3 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */; };
 		709712011B46B93400D0B6A3 /* IdeaGeneratorのアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 709712001B46B93400D0B6A3 /* IdeaGeneratorのアイコン.png */; };
 		70B9029C1AA6D8AD002D14D9 /* WordPlotScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */; };
@@ -38,6 +39,8 @@
 		70BD23501AA26C75004B6C43 /* 09-chat-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD234C1AA26C75004B6C43 /* 09-chat-2@2x.png */; };
 		70BD23511AA26C75004B6C43 /* 15-tags.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD234D1AA26C75004B6C43 /* 15-tags.png */; };
 		70BD23521AA26C75004B6C43 /* 15-tags@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70BD234E1AA26C75004B6C43 /* 15-tags@2x.png */; };
+		70EA99051B5155C800900EE2 /* BookWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA99041B5155C800900EE2 /* BookWordStore.swift */; };
+		70EA99071B51568F00900EE2 /* JapaneseITBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA99061B51568F00900EE2 /* JapaneseITBook.swift */; };
 		70FCA3321ABF053C00509B04 /* DOFlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCA3311ABF053C00509B04 /* DOFlatButton.swift */; };
 		70FCA3381ABFFA2200509B04 /* WordCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCA3371ABFFA2200509B04 /* WordCollectionTableViewController.swift */; };
 		70FCA33A1AC0069500509B04 /* SomeWordUITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FCA3391AC0069500509B04 /* SomeWordUITableCell.swift */; };
@@ -63,6 +66,7 @@
 		70577C0C1B43EFF4008260D7 /* EngineeringWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineeringWordStore.swift; sourceTree = "<group>"; };
 		70577C101B4574C6008260D7 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = ../InfoPlist.strings; sourceTree = "<group>"; };
 		707A90E01AB5F6CD00092C72 /* JijiWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JijiWord.swift; sourceTree = "<group>"; };
+		7091BC641B5037F100930842 /* JapaneseComputerBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseComputerBook.swift; sourceTree = "<group>"; };
 		709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		709712001B46B93400D0B6A3 /* IdeaGeneratorのアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IdeaGeneratorのアイコン.png"; sourceTree = "<group>"; };
 		70B9029B1AA6D8AD002D14D9 /* WordPlotScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordPlotScrollView.swift; path = ../WordPlotScrollView.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		70BD234C1AA26C75004B6C43 /* 09-chat-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2@2x.png"; sourceTree = "<group>"; };
 		70BD234D1AA26C75004B6C43 /* 15-tags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-tags.png"; sourceTree = "<group>"; };
 		70BD234E1AA26C75004B6C43 /* 15-tags@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "15-tags@2x.png"; sourceTree = "<group>"; };
+		70EA99041B5155C800900EE2 /* BookWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookWordStore.swift; sourceTree = "<group>"; };
+		70EA99061B51568F00900EE2 /* JapaneseITBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseITBook.swift; sourceTree = "<group>"; };
 		70FCA3311ABF053C00509B04 /* DOFlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOFlatButton.swift; sourceTree = "<group>"; };
 		70FCA3371ABFFA2200509B04 /* WordCollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCollectionTableViewController.swift; sourceTree = "<group>"; };
 		70FCA3391AC0069500509B04 /* SomeWordUITableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeWordUITableCell.swift; sourceTree = "<group>"; };
@@ -116,6 +122,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7091BC631B5037A800930842 /* JapaneseBook */ = {
+			isa = PBXGroup;
+			children = (
+				7091BC641B5037F100930842 /* JapaneseComputerBook.swift */,
+				70EA99041B5155C800900EE2 /* BookWordStore.swift */,
+				70EA99061B51568F00900EE2 /* JapaneseITBook.swift */,
+			);
+			name = JapaneseBook;
+			sourceTree = "<group>";
+		};
 		70BD23021AA1BB9F004B6C43 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +166,7 @@
 				70BD23171AA1BB9F004B6C43 /* Images.xcassets */,
 				709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */,
 				709712001B46B93400D0B6A3 /* IdeaGeneratorのアイコン.png */,
+				7091BC631B5037A800930842 /* JapaneseBook */,
 				70FE39541B483B3600A9FC17 /* EnglishWord */,
 				70BD23301AA1C9E7004B6C43 /* JapaneseWord */,
 				70BD234B1AA26C75004B6C43 /* 09-chat-2.png */,
@@ -334,6 +351,7 @@
 				70BD23431AA1CA3A004B6C43 /* EthicalWordStoreJp.swift in Sources */,
 				70FCA3321ABF053C00509B04 /* DOFlatButton.swift in Sources */,
 				70BD23321AA1C9FE004B6C43 /* MedicalWordStore.swift in Sources */,
+				7091BC651B5037F100930842 /* JapaneseComputerBook.swift in Sources */,
 				70BD23341AA1CA0A004B6C43 /* ModernSocialWord.swift in Sources */,
 				70BD23461AA1CA3A004B6C43 /* WorldHistoryWord.swift in Sources */,
 				70BD23421AA1CA3A004B6C43 /* ElementaryWordStore.swift in Sources */,
@@ -343,6 +361,7 @@
 				70BD23451AA1CA3A004B6C43 /* PhysicalWordStore.swift in Sources */,
 				70BD23401AA1CA3A004B6C43 /* BiologicalWordStore.swift in Sources */,
 				70FE39561B483BD100A9FC17 /* EnglishBusinessWordStore.swift in Sources */,
+				70EA99071B51568F00900EE2 /* JapaneseITBook.swift in Sources */,
 				70B9029C1AA6D8AD002D14D9 /* WordPlotScrollView.swift in Sources */,
 				70BD23381AA1CA24004B6C43 /* OpticalWordStore.swift in Sources */,
 				70BD234A1AA1D5B9004B6C43 /* WordStore.swift in Sources */,
@@ -350,6 +369,7 @@
 				70BD23481AA1CAAB004B6C43 /* WordPoolManagement.swift in Sources */,
 				70577C091B439F77008260D7 /* WordPlotViewController.swift in Sources */,
 				707A90E11AB5F6CD00092C72 /* JijiWord.swift in Sources */,
+				70EA99051B5155C800900EE2 /* BookWordStore.swift in Sources */,
 				70BD23111AA1BB9F004B6C43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
