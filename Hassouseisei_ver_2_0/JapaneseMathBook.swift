@@ -184,7 +184,7 @@ class JapaneseMathBook: BookWordStore {
         book.BookTitle = "復刻版　算数・数学教育と数学的な考え方"
         book.MobileBookURL = "http://www.amazon.co.jp/gp/aw/rd.html?ie=UTF8&a=4491031304&at=daisukeokahas-22&dl=1&lc=msn&uid=NULLGWDOCOMO&url=%2Fgp%2Faw%2Fd.html"
         
-        book.BookTitle = 
+    
         
         
         
