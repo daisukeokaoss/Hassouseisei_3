@@ -145,6 +145,9 @@
                                 <state key="normal" title="Donate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="zvB-2c-NkW" kind="presentation" id="fSu-pP-xJK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カンパをお願いします！！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4S-Hp-3IM">
                                 <rect key="frame" x="198" y="329" width="204" height="20.5"/>
@@ -166,6 +169,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pa-wQ-0r3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="697" y="1537"/>
+        </scene>
+        <!--Donation Process View Controller-->
+        <scene sceneID="qWr-Yd-caW">
+            <objects>
+                <viewController id="zvB-2c-NkW" customClass="DonationProcessViewController" customModule="Hassouseisei_ver_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="unX-b3-8tL"/>
+                        <viewControllerLayoutGuide type="bottom" id="cNJ-X9-aQB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zoF-Pn-CeX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wy6-3T-2Rv">
+                                <rect key="frame" x="0.0" y="40" width="600" height="162"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="PricePickerView" destination="Wy6-3T-2Rv" id="z82-4k-0Mj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yKZ-5o-jUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1465" y="1410"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xT3-KU-HZh">

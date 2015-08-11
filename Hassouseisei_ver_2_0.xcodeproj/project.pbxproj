@@ -14,6 +14,7 @@
 		70577C111B4574C6008260D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70577C101B4574C6008260D7 /* InfoPlist.strings */; };
 		70577C131B457607008260D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70577C101B4574C6008260D7 /* InfoPlist.strings */; };
 		705BE8EB1B79B87000796A53 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705BE8EA1B79B87000796A53 /* ContactViewController.swift */; };
+		705BE8ED1B7A018800796A53 /* DonationProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705BE8EC1B7A018800796A53 /* DonationProcessViewController.swift */; };
 		707A90E11AB5F6CD00092C72 /* JijiWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A90E01AB5F6CD00092C72 /* JijiWord.swift */; };
 		7091BC651B5037F100930842 /* JapaneseComputerBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7091BC641B5037F100930842 /* JapaneseComputerBook.swift */; };
 		709711FF1B46B8F000D0B6A3 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */; };
@@ -67,6 +68,7 @@
 		70577C0C1B43EFF4008260D7 /* EngineeringWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineeringWordStore.swift; sourceTree = "<group>"; };
 		70577C101B4574C6008260D7 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = ../InfoPlist.strings; sourceTree = "<group>"; };
 		705BE8EA1B79B87000796A53 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		705BE8EC1B7A018800796A53 /* DonationProcessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationProcessViewController.swift; sourceTree = "<group>"; };
 		707A90E01AB5F6CD00092C72 /* JijiWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JijiWord.swift; sourceTree = "<group>"; };
 		7091BC641B5037F100930842 /* JapaneseComputerBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseComputerBook.swift; sourceTree = "<group>"; };
 		709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				70BD23101AA1BB9F004B6C43 /* AppDelegate.swift */,
 				70BD23471AA1CAAB004B6C43 /* WordPoolManagement.swift */,
 				70BD23141AA1BB9F004B6C43 /* Main.storyboard */,
+				705BE8EC1B7A018800796A53 /* DonationProcessViewController.swift */,
 				705BE8EA1B79B87000796A53 /* ContactViewController.swift */,
 				70FCA33B1AC0086100509B04 /* WordCountTableViewCell.swift */,
 				70FCA3391AC0069500509B04 /* SomeWordUITableCell.swift */,
@@ -356,6 +359,7 @@
 				70BD23321AA1C9FE004B6C43 /* MedicalWordStore.swift in Sources */,
 				7091BC651B5037F100930842 /* JapaneseComputerBook.swift in Sources */,
 				70BD23341AA1CA0A004B6C43 /* ModernSocialWord.swift in Sources */,
+				705BE8ED1B7A018800796A53 /* DonationProcessViewController.swift in Sources */,
 				70BD23461AA1CA3A004B6C43 /* WorldHistoryWord.swift in Sources */,
 				70BD23421AA1CA3A004B6C43 /* ElementaryWordStore.swift in Sources */,
 				705BE8EB1B79B87000796A53 /* ContactViewController.swift in Sources */,
