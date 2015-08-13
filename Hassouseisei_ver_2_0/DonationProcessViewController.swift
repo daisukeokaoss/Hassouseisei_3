@@ -12,6 +12,11 @@ class DonationProcessViewController: UIViewController , UIPickerViewDelegate , U
 
     private let PriceArray = [1000,3000,5000]
 
+
+    @IBAction func CancelButtonClick(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     
     @IBOutlet weak var PricePickerView:UIPickerView!
     override func viewDidLoad() {
