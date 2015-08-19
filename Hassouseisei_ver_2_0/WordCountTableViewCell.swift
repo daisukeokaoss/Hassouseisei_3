@@ -45,5 +45,10 @@ class WordCountTableViewCell: UITableViewCell {
 
     @IBOutlet weak var CountingWordLabel: UILabel!
     
+    override func  layoutSubviews() {
+        print("なになに用語")
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "update:", name: "wordCount", object: nil)
+    }
+    
     
 }
