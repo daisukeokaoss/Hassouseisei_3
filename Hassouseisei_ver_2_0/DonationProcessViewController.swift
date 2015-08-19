@@ -8,9 +8,15 @@
 
 import UIKit
 
-class DonationProcessViewController: UIViewController , UIPickerViewDelegate , UIPickerViewDataSource {
+import StoreKit
+
+class DonationProcessViewController: UIViewController , SKProductsRequestDelegate, SKPaymentTransactionObserver{
 
     private let PriceArray = [1000,3000,5000]
+    
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
+    var product_id: NSString? = "biz.nanosoftware.donate1";
 
 
     @IBAction func CancelButtonClick(sender: AnyObject) {
@@ -23,12 +29,30 @@ class DonationProcessViewController: UIViewController , UIPickerViewDelegate , U
         super.viewDidLoad()
         
         //self.PricePickerView = UIPickerView()
-        
-        self.PricePickerView.delegate = self
-        
-        self.PricePickerView.dataSource = self
 
         // Do any additional setup after loading the view.
+        //SKPaymentQueue.defaultQueue().addTransactionObserver(self)
+        
+        //Check if product is purchased
+        
+        SKPaymentQueue.defaultQueue().addTransactionObserver(self)
+        
+        //Check if product is purchased
+        
+        
+        
+        if (defaults.boolForKey("purchased")){
+            
+            // Hide a view or show content depends on your requirement
+            
+        }
+        else if (!defaults.boolForKey("stonerPurchased")){
+            println("false")
+            
+        }
+        
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +79,81 @@ class DonationProcessViewController: UIViewController , UIPickerViewDelegate , U
         
     }
     
+    func buyProduct(product: SKProduct){
+        println("Sending the Payment Request to Apple");
+        var payment = SKPayment(product: product)
+        SKPaymentQueue.defaultQueue().addPayment(payment);
+        
+    }
+    
+    func productsRequest (request: SKProductsRequest, didReceiveResponse response: SKProductsResponse) {
+        
+        var count : Int = response.products.count
+        if (count>0) {
+            var validProducts = response.products
+            var validProduct: SKProduct = response.products[0] as! SKProduct
+            if (validProduct.productIdentifier == self.product_id) {
+                println(validProduct.localizedTitle)
+                println(validProduct.localizedDescription)
+                println(validProduct.price)
+                buyProduct(validProduct);
+            } else {
+                println(validProduct.productIdentifier)
+            }
+        } else {
+            println("nothing")
+        }
+    }
+
+    
+    @IBAction func DonateExecute(sender: UIButton) {
+        if (SKPaymentQueue.canMakePayments())
+        {
+            var productID:NSSet = NSSet(object: self.product_id!);
+            var productsRequest:SKProductsRequest = SKProductsRequest(productIdentifiers: productID as Set<NSObject>);
+            productsRequest.delegate = self;
+            productsRequest.start();
+            println("Fething Products");
+        }else{
+            println("can't make purchases");
+        }
+
+    }
+    
+    func paymentQueue(queue: SKPaymentQueue!, updatedTransactions transactions: [AnyObject]!)    {
+        println("Received Payment Transaction Response from Apple");
+        
+        for transaction:AnyObject in transactions {
+            if let trans:SKPaymentTransaction = transaction as? SKPaymentTransaction{
+                switch trans.transactionState {
+                case .Purchased:
+                    println("Product Purchased");
+                    SKPaymentQueue.defaultQueue().finishTransaction(transaction as! SKPaymentTransaction)
+                    defaults.setBool(true , forKey: "purchased")
+                    break;
+                case .Failed:
+                    println("Purchased Failed");
+                    SKPaymentQueue.defaultQueue().finishTransaction(transaction as! SKPaymentTransaction)
+                    break;
+                    
+                    
+                    
+                case .Restored:
+                    println("Already Purchased");
+                    SKPaymentQueue.defaultQueue().restoreCompletedTransactions()
+                    
+                    
+                default:
+                    break;
+                }
+            }
+        }
+        
+    }
+    
+    func request(request: SKRequest!, didFailWithError error: NSError!) {
+        println("Error Fetching product information");
+    }
 
     
 

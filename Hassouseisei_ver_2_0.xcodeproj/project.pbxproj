@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		703EDE511AABFE6600DEF568 /* ShokenWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703EDE501AABFE6600DEF568 /* ShokenWordStore.swift */; };
+		70426FB01B83A3460085384C /* FoodWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70426FAF1B83A3460085384C /* FoodWordStore.swift */; };
+		70426FB61B840B530085384C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70426FB51B840B530085384C /* StoreKit.framework */; };
 		70577C091B439F77008260D7 /* WordPlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70577C081B439F77008260D7 /* WordPlotViewController.swift */; };
 		70577C0B1B43A604008260D7 /* GoogleSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70577C0A1B43A604008260D7 /* GoogleSearchViewController.swift */; };
 		70577C0D1B43EFF4008260D7 /* EngineeringWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70577C0C1B43EFF4008260D7 /* EngineeringWordStore.swift */; };
@@ -63,6 +65,8 @@
 /* Begin PBXFileReference section */
 		703EDE4C1AA714C000DEF568 /* Hassouseisei_ver_2_0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hassouseisei_ver_2_0-Bridging-Header.h"; sourceTree = "<group>"; };
 		703EDE501AABFE6600DEF568 /* ShokenWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShokenWordStore.swift; sourceTree = "<group>"; };
+		70426FAF1B83A3460085384C /* FoodWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodWordStore.swift; sourceTree = "<group>"; };
+		70426FB51B840B530085384C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		70577C081B439F77008260D7 /* WordPlotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPlotViewController.swift; sourceTree = "<group>"; };
 		70577C0A1B43A604008260D7 /* GoogleSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSearchViewController.swift; sourceTree = "<group>"; };
 		70577C0C1B43EFF4008260D7 /* EngineeringWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineeringWordStore.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70426FB61B840B530085384C /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +144,7 @@
 		70BD23021AA1BB9F004B6C43 = {
 			isa = PBXGroup;
 			children = (
+				70426FB51B840B530085384C /* StoreKit.framework */,
 				70BD230D1AA1BB9F004B6C43 /* Hassouseisei_ver_2_0 */,
 				70BD23231AA1BB9F004B6C43 /* Hassouseisei_ver_2_0Tests */,
 				70BD230C1AA1BB9F004B6C43 /* Products */,
@@ -229,6 +235,7 @@
 				703EDE501AABFE6600DEF568 /* ShokenWordStore.swift */,
 				707A90E01AB5F6CD00092C72 /* JijiWord.swift */,
 				70577C0C1B43EFF4008260D7 /* EngineeringWordStore.swift */,
+				70426FAF1B83A3460085384C /* FoodWordStore.swift */,
 			);
 			name = JapaneseWord;
 			sourceTree = "<group>";
@@ -291,6 +298,11 @@
 					70BD230A1AA1BB9F004B6C43 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = X4JADE2386;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					70BD231F1AA1BB9F004B6C43 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -355,6 +367,7 @@
 				70577C0B1B43A604008260D7 /* GoogleSearchViewController.swift in Sources */,
 				70BD23411AA1CA3A004B6C43 /* ChemicalWordStore.swift in Sources */,
 				70BD23431AA1CA3A004B6C43 /* EthicalWordStoreJp.swift in Sources */,
+				70426FB01B83A3460085384C /* FoodWordStore.swift in Sources */,
 				70FCA3321ABF053C00509B04 /* DOFlatButton.swift in Sources */,
 				70BD23321AA1C9FE004B6C43 /* MedicalWordStore.swift in Sources */,
 				7091BC651B5037F100930842 /* JapaneseComputerBook.swift in Sources */,
