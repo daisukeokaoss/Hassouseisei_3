@@ -13,13 +13,16 @@ class SomeWordUITableCell: UITableViewCell {
     
     func WordSwitchChanged(){
         var delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let ud = NSUserDefaults.standardUserDefaults()
         
         for (var i=0;i<delegate.wordpoolmanage.WordPoolArray.count; i++){
             if(self.SomeWordLabel.text == delegate.wordpoolmanage.WordPoolArray[i].returnCaption()){
                 if(EnableOrDisableWordPoolSwitch.on == true){
                     delegate.wordpoolmanage.WordPoolArray[i].WordSwitchOn = true
+                    ud.setBool(true, forKey: SomeWordLabel.text!)
                 }else{
                     delegate.wordpoolmanage.WordPoolArray[i].WordSwitchOn = false
+                    ud.setBool(false, forKey: SomeWordLabel.text!)
                 }
                 
                 delegate.wordpoolmanage.WordPoolCountAndPlot()
@@ -128,19 +131,7 @@ class SomeWordUITableCell: UITableViewCell {
        
     }
     
-   /* override func layoutSubviews() {
-        println("load \(self.SomeWordLabel.text)")
-        loadWordSwitchSetting()
-    }
-    
-    override func removeFromSuperview() {
-        
-    }
-    
-    override func prepareForReuse() {
-        println("prepare \(self.SomeWordLabel.text)")
-        //WordSwitchChanged()
-    }*/
+
     
     
     
