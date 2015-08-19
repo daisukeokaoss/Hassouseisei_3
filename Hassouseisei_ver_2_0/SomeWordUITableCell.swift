@@ -28,6 +28,24 @@ class SomeWordUITableCell: UITableViewCell {
         }
         
     }
+    
+    func loadWordSwitchSetting()
+    {
+        var delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        for (var i=0;i<delegate.wordpoolmanage.WordPoolArray.count; i++){
+            if(self.SomeWordLabel.text == delegate.wordpoolmanage.WordPoolArray[i].returnCaption()){
+                if(delegate.wordpoolmanage.WordPoolArray[i].WordSwitchOn == true){
+                    EnableOrDisableWordPoolSwitch.setOn(true, animated: false)
+                }else{
+                    EnableOrDisableWordPoolSwitch.setOn(false, animated: false)
+                }
+                
+                delegate.wordpoolmanage.WordPoolCountAndPlot()
+                
+            }
+        }
+    }
 
 
     @IBAction func WordSwitchClicked(sender: UISwitch) {
@@ -49,6 +67,21 @@ class SomeWordUITableCell: UITableViewCell {
         keyValue.setObject(true, forKey: SomeWordLabel.text!)
         
         NSUserDefaults.standardUserDefaults().registerDefaults(keyValue as [NSObject : AnyObject])
+        
+        var delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        for (var i=0;i<delegate.wordpoolmanage.WordPoolArray.count; i++){
+            if(self.SomeWordLabel.text == delegate.wordpoolmanage.WordPoolArray[i].returnCaption()){
+                if(delegate.wordpoolmanage.WordPoolArray[i].WordSwitchOn == true){
+                    ud.setBool(true, forKey: SomeWordLabel.text!)
+                }else{
+                    ud.setBool(false, forKey: SomeWordLabel.text!)
+                }
+                
+                delegate.wordpoolmanage.WordPoolCountAndPlot()
+                
+            }
+        }
         
         
         
@@ -94,6 +127,22 @@ class SomeWordUITableCell: UITableViewCell {
             
        
     }
+    
+   /* override func layoutSubviews() {
+        println("load \(self.SomeWordLabel.text)")
+        loadWordSwitchSetting()
+    }
+    
+    override func removeFromSuperview() {
+        
+    }
+    
+    override func prepareForReuse() {
+        println("prepare \(self.SomeWordLabel.text)")
+        //WordSwitchChanged()
+    }*/
+    
+    
     
    
 

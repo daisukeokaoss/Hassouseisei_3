@@ -12,7 +12,7 @@ import StoreKit
 
 class DonationProcessViewController: UIViewController , SKProductsRequestDelegate, SKPaymentTransactionObserver{
 
-    private let PriceArray = [1000,3000,5000]
+    
     
     let defaults = NSUserDefaults.standardUserDefaults()
     
@@ -64,15 +64,8 @@ class DonationProcessViewController: UIViewController , SKProductsRequestDelegat
         return 1
     }
     
-    //表示個数
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return PriceArray.count
-    }
-    
-    //表示内容
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String {
-        return String(self.PriceArray[row])
-    }
+
+
     
     //選択時
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
