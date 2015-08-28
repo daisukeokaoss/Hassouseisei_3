@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D8EDB421-904C-4822-9398-218BC9DF3A24</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Hassouseisei_ver_2_0</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>008E58A48C8A26171851993446C6A19CD526419E</key>
 		<string>https://bitbucket.org/daisukeokaoss/hassouseisei_ver_3_1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Hassouseisei_ver_2_0.xcodeproj/project.xcworkspace</string>
+	<string>Hassouseisei_ver_2_0.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>008E58A48C8A26171851993446C6A19CD526419E</key>

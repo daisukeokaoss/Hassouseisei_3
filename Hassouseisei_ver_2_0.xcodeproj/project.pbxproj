@@ -17,6 +17,7 @@
 		70577C131B457607008260D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70577C101B4574C6008260D7 /* InfoPlist.strings */; };
 		705BE8EB1B79B87000796A53 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705BE8EA1B79B87000796A53 /* ContactViewController.swift */; };
 		705BE8ED1B7A018800796A53 /* DonationProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705BE8EC1B7A018800796A53 /* DonationProcessViewController.swift */; };
+		707295AC1B8FE15D00211305 /* CaltualWordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707295AB1B8FE15D00211305 /* CaltualWordStore.swift */; };
 		707A90E11AB5F6CD00092C72 /* JijiWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707A90E01AB5F6CD00092C72 /* JijiWord.swift */; };
 		7091BC651B5037F100930842 /* JapaneseComputerBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7091BC641B5037F100930842 /* JapaneseComputerBook.swift */; };
 		709711FF1B46B8F000D0B6A3 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */; };
@@ -73,6 +74,7 @@
 		70577C101B4574C6008260D7 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = ../InfoPlist.strings; sourceTree = "<group>"; };
 		705BE8EA1B79B87000796A53 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		705BE8EC1B7A018800796A53 /* DonationProcessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationProcessViewController.swift; sourceTree = "<group>"; };
+		707295AB1B8FE15D00211305 /* CaltualWordStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaltualWordStore.swift; sourceTree = "<group>"; };
 		707A90E01AB5F6CD00092C72 /* JijiWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JijiWord.swift; sourceTree = "<group>"; };
 		7091BC641B5037F100930842 /* JapaneseComputerBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseComputerBook.swift; sourceTree = "<group>"; };
 		709711FE1B46B8F000D0B6A3 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				707A90E01AB5F6CD00092C72 /* JijiWord.swift */,
 				70577C0C1B43EFF4008260D7 /* EngineeringWordStore.swift */,
 				70426FAF1B83A3460085384C /* FoodWordStore.swift */,
+				707295AB1B8FE15D00211305 /* CaltualWordStore.swift */,
 			);
 			name = JapaneseWord;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				707295AC1B8FE15D00211305 /* CaltualWordStore.swift in Sources */,
 				70FCA3381ABFFA2200509B04 /* WordCollectionTableViewController.swift in Sources */,
 				70577C0D1B43EFF4008260D7 /* EngineeringWordStore.swift in Sources */,
 				70BD23361AA1CA14004B6C43 /* ITWordStore.swift in Sources */,
