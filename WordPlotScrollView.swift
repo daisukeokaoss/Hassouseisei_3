@@ -120,7 +120,6 @@ class WordPlotScrollView: UIScrollView {
         self.Label1st.sizeToFit()
         
         self.contentSize = CGSize(width: X_Label + self.Label1st.sizeThatFits(CGSize(width: 1000, height: 1000)).width, height: self.bounds.size.height)
-        //self.sizeThatFits(CGSize(width: X_Label + self.Label1st.bounds.size.width, height: UIScreen.mainScreen().bounds.size.height))
         
         
         self.Label1st.userInteractionEnabled = true
@@ -153,11 +152,6 @@ class WordPlotScrollView: UIScrollView {
         self.generateButton = DOFlatButton()
         
         self.generateButton.frame = CGRectMake(X_Label, Row_height*9, label_width,Row_height*2.85)
-        /*self.generateButton.faceColor = UIColor(red: 86.0/255.0, green: 161.0/255.0, blue: 217.0/255.0, alpha: 1.0)
-        self.generateButton.sideColor = UIColor(red: 79.0/255.0, green: 127.0/255.0, blue: 179.0/255.0, alpha: 1.0)
-        self.generateButton.radius = 8.0
-        self.generateButton.margin = 4.0
-        self.generateButton.depth  = 3.0*/
         
         self.generateButton.faceColor = UIColor(red: 243.0/255.0, green: 152.0/255.0, blue: 0, alpha: 1.0)
         self.generateButton.sideColor = UIColor(red: 170.0/255.0, green: 105.0/255.0, blue: 0, alpha: 1.0)
