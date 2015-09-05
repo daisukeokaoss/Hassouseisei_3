@@ -60,17 +60,17 @@ class DonationProcessViewController: UIViewController , SKProductsRequestDelegat
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+  /*  func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
-    }
+    }*/
     
 
 
     
     //選択時
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+ /*   func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-    }
+    }*/
     
     func buyProduct(product: SKProduct){
         println("Sending the Payment Request to Apple");
@@ -123,6 +123,12 @@ class DonationProcessViewController: UIViewController , SKProductsRequestDelegat
                     println("Product Purchased");
                     SKPaymentQueue.defaultQueue().finishTransaction(transaction as! SKPaymentTransaction)
                     defaults.setBool(true , forKey: "purchased")
+                    let alertController = UIAlertController(title: "ありがとうございます。", message: "カンパありがとうございます！！", preferredStyle: .Alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    presentViewController(alertController, animated: true, completion: nil)
                     break;
                 case .Failed:
                     println("Purchased Failed");
