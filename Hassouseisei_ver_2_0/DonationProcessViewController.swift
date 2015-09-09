@@ -16,7 +16,7 @@ class DonationProcessViewController: UIViewController , SKProductsRequestDelegat
     
     let defaults = NSUserDefaults.standardUserDefaults()
     
-    var product_id: NSString? = "biz.nanosoftware.donate1";
+    var product_id: NSString? = "biz.nanosoftware.0001.donate1";
 
 
     @IBAction func CancelButtonClick(sender: AnyObject) {
@@ -102,8 +102,10 @@ class DonationProcessViewController: UIViewController , SKProductsRequestDelegat
     @IBAction func DonateExecute(sender: UIButton) {
         if (SKPaymentQueue.canMakePayments())
         {
+            //let productID: Set<String> = [self.product_id as! String]
             var productID:NSSet = NSSet(object: self.product_id!);
             var productsRequest:SKProductsRequest = SKProductsRequest(productIdentifiers: productID as Set<NSObject>);
+            //var productsRequest:SKProductsRequest = SKProductsRequest(productIdentifiers: productID);
             productsRequest.delegate = self;
             productsRequest.start();
             println("Fething Products");
